@@ -1,0 +1,15 @@
+<?php
+/**
+ * Template Name: Classic Cart
+ */
+
+defined('ABSPATH') || exit;
+
+get_header();
+?>
+
+<div class="woocommerce">
+    <?php echo do_shortcode('[woocommerce_cart]'); ?>
+</div>
+
+<?php get_footer(); ?>

@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Load your styles (Tailwind, swiper.css, fontawesome, etc.) -->
+
+  <!-- Load your JS entry point -->
+
+  <title>Bánh Bao Minh Hảo</title>
+  <script type="module" crossorigin src="./assets/main-B2Ccc0Nk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-DiNN7t2y.css">
+</head>
+
+<body class="overflow-x-hidden">
+
+  <!-- Header -->
+  <header class="bg-white relative">
+    <div class="max-w-screen mx-auto flex items-center justify-between h-20 lg:h-28 px-6 lg:px-12 relative">
+
+      <!-- Left links -->
+      <ul class="flex-1 hidden lg:flex space-x-8 uppercase">
+        <li><a href="/"
+            class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Trang
+            chủ</a>
+        </li>
+        <!-- Dropdown Button Wrapper -->
+        <li class="relative group">
+          <button id="dropdownButton1" type="button" aria-controls="dropdown1"
+            class="flex items-center uppercase text-black font-semibold group-hover:text-[#E7292B] transition duration-300 focus:outline-none">
+            <span
+              class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+              Giới Thiệu
+            </span>
+            <i id="icon1"
+              class="fas fa-chevron-right ml-2 transform transition-transform duration-300 group-hover:rotate-90"></i>
+          </button>
+
+
+          <!-- Dropdown: hover + click show -->
+          <div id="dropdown1"
+            class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white shadow rounded transition-all duration-300">
+            <a href="about-us"
+              class="block px-4 py-3 text-black  hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+              Về Minh Hảo
+            </a>
+            <a href="store"
+              class="block px-4 py-3 hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+              Cửa hàng trực thuộc
+            </a>
+          </div>
+        </li>
+
+
+        <li><a href="cooperate"
+            class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Hợp
+            tác</a>
+        </li>
+      </ul>
+
+      <!-- CENTER LOGO -->
+      <a href="/" class="hidden lg:block flex-shrink-0 z-10 items-center">
+        <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-28 w-auto" />
+      </a>
+
+      <!-- RIGHT LINKS -->
+      <div class="flex-1 hidden lg:flex justify-end items-center space-x-3">
+        <!-- Right nav -->
+        <ul class="hidden xl:flex space-x-4">
+          <li class="relative group">
+            <button id="dropdownButton2" type="button" aria-expanded="false" aria-controls="dropdown2"
+              class="flex items-center uppercase text-black font-semibold hover:text-[#E7292B] underline-offset-2 decoration-[#E7292B] focus:outline-none">
+              <span
+                class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                Sản phẩm
+              </span>
+              <i id="icon2"
+                class="fas fa-chevron-right ml-2 text-black font-semibold transform transition-transform duration-300 group-hover:rotate-90"></i>
+            </button>
+
+            <!-- Dropdown content -->
+            <div id="dropdown2"
+              class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white rounded shadow">
+              <a href="dumpling"
+                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                Bánh Bao
+              </a>
+              <a href="#"
+                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                Bánh Ngọt
+              </a>
+              <a href="#"
+                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                Bánh Giò - Xôi
+              </a>
+            </div>
+          </li>
+
+
+          <li><a href="news"
+              class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Tin
+              Tức</a>
+          </li>
+
+          <li><a href="contact"
+              class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Liên
+              Hệ</a>
+          </li>
+        </ul>
+        <!-- Search + Phone -->
+        <button
+          class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition mx-6 cursor-pointer">
+          <i class="fa-solid fa-search"></i>
+        </button>
+        <div class="flex items-center space-x-2">
+          <i class="fa-solid fa-phone-volume text-3xl text-[#E7292B]"></i>
+          <div class="flex flex-col leading-tight">
+            <span class="text-black font-semibold text-sm">Tư vấn khách hàng</span>
+            <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Topbar -->
+      <div class="relative w-full h-28 px-4 lg:hidden flex items-center justify-between">
+
+        <!-- LEFT: Hamburger -->
+        <button id="menuToggle" class="z-10 w-8 h-8 flex flex-col justify-between items-center p-1">
+          <i class="fa-solid fa-bars text-[#E7292B]"></i>
+        </button>
+
+        <!-- CENTER: Logo -->
+        <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+          <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-20 lg:h-24 w-auto" />
+        </div>
+
+        <!-- RIGHT: Search + Phone -->
+        <div class="hidden sm:flex items-center space-x-3">
+          <!-- Search -->
+          <button
+            class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition cursor-pointer">
+            <i class="fa-solid fa-search"></i>
+          </button>
+
+          <!-- Phone (make text tighter on small screens) -->
+          <div class="flex items-center space-x-1">
+            <i class="fa-solid fa-phone-volume text-xl text-[#E7292B]"></i>
+            <div class="flex flex-col leading-none text-right text-xs">
+              <span class="text-black font-semibold">Tư vấn khách hàng</span>
+              <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Black overlay animation layer -->
+      <div id="overlaySlide"
+        class="fixed top-0 left-0 w-0 h-full bg-black opacity-70 z-30 transition-all duration-500 ease-in-out pointer-events-none touch-none">
+      </div>
+
+      <!-- Mobile Menu Sidebar -->
+      <div id="mobileMenu"
+        class="lg:hidden fixed top-0 left-0 h-full w-64 shadow-lg transform -translate-x-full transition-transform duration-300 z-40 flex flex-col overflow-y-auto"
+        style="background: radial-gradient(50% 50% at 50% 50%, #B40303 0%, #7A0202 100%);">
+
+        <!-- ✖ Close button -->
+        <div class="flex justify-end p-4">
+          <button id="mobileMenuClose" aria-label="Close Menu"
+            class="text-3xl text-[#D6A528] hover:text-[#E7292B] transition duration-300 focus:outline-none">
+            &times;
+          </button>
+        </div>
+
+        <!-- 🔍 Search -->
+        <form action="/search" method="GET" class="px-6 mb-4">
+          <div class="flex items-center bg-white rounded-lg overflow-hidden w-full">
+            <input name="q" type="text" placeholder="Tìm kiếm..." autocomplete="off"
+              class="flex-grow px-3 py-2 text-sm text-[#7A0202] focus:outline-none min-w-0">
+            <button type="submit" class="flex-shrink-0 px-4 py-2 bg-[#E7292B] text-white hover:bg-[#b40303]">
+              <i class="fa-solid fa-search"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- Navigation List -->
+        <ul class="flex flex-col space-y-5 px-6 pb-8 uppercase font-semibold text-white flex-1">
+
+          <li><a href="/" class="hover:text-[#E7292B] transition-colors">Trang chủ</a></li>
+
+          <!-- Giới Thiệu -->
+          <li>
+            <button id="mobileDropdownButton1" aria-expanded="false" aria-controls="mobileDropdown1"
+              class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+              Giới Thiệu
+              <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor"
+                stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <ul id="mobileDropdown1"
+              class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-2 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+              <li><a href="about-us" class="hover:text-[#E7292B] transition-colors">Về Minh Hảo</a></li>
+              <li><a href="store" class="hover:text-[#E7292B] transition-colors">Cửa hàng trực thuộc</a></li>
+            </ul>
+          </li>
+
+          <li><a href="cooperate" class="hover:text-[#E7292B] transition-colors">Hợp tác</a></li>
+
+          <!-- Sản phẩm -->
+          <li>
+            <button id="mobileDropdownButton2" aria-expanded="false" aria-controls="mobileDropdown2"
+              class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+              Sản phẩm
+              <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor"
+                stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+            <ul id="mobileDropdown2"
+              class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-3 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+              <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Bao</a></li>
+              <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Ngọt</a></li>
+              <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Giò - Xôi</a></li>
+            </ul>
+          </li>
+
+          <li><a href="news" class="hover:text-[#E7292B] transition-colors">Tin tức</a></li>
+          <li><a href="contact" class="hover:text-[#E7292B] transition-colors">Liên hệ</a></li>
+        </ul>
+
+        <!-- ☎ Phone block -->
+        <div class="px-6 py-4 border-t border-[#FFCD27]/30">
+          <div class="flex items-center space-x-3">
+            <i class="fa-solid fa-phone-volume text-2xl text-[#FFCD27]"></i>
+            <div class="leading-tight">
+              <span class="block text-xs text-white">Tư vấn khách hàng</span>
+              <span class="block font-semibold text-[#FFCD27]">(028) 3957 1457</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative water image -->
+    <div id="waterImage"
+      class="absolute w-48 lg:w-96 h-auto top-[calc(100%-0.1rem)] left-1/2 -translate-x-1/2 z-10 transition-transform duration-500 ease-[cubic-bezier(0.68,0.95,0.41,1.31)]">
+      <img src="data:image/svg+xml,%3csvg%20width='240'%20height='28'%20viewBox='0%200%20240%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%200C72%200%2071.5%2027.5%20119.5%2027.5C167.5%2027.5%20168%200%20240%200H0Z'%20fill='%23FFFEFD'/%3e%3c/svg%3e" alt="Decorative Water" class="w-full h-full object-contain block" />
+    </div>
+  </header>
+
+  <!-- Image Hero -->
+  <section class="swiper home-hero-swiper relative h-[650px] bg-[var(--main-bg)]" style="background: var(--main-bg);">
+    <div class="swiper-wrapper h-auto" id="heroSwiperWrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide overflow-hidden hero-slide flex items-center">
+        <div
+          class="max-w-7xl mx-auto px-4 py-12 gap-4 flex flex-col-reverse md:flex-row items-center justify-between w-full mt-16 sm:mt-20 md:mt-28 lg:mt-36">
+
+          <!-- Text Content -->
+          <div class="w-full md:w-1/2 text-white z-10 mt-8 md:mt-0">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#FFCD27]">
+              Bánh Bao Kim Sa Trứng Muối
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6">
+              Mỗi chiếc bánh căng tròn, nhân thịt nóng hổi quyện cùng nước sốt sóng sánh bên trong, mang đến trải nghiệm
+              "cắn đâu, ngập nhân đến đó". Bánh bao xá xíu ngập nhân không chỉ no bụng mà còn đậm vị ngon khó quên, rất
+              thích hợp cho bữa sáng.
+            </p>
+            <a href="#"
+              class="inline-flex items-center gap-2 px-10 py-2 bg-[#E7292B] text-white text-base sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#c92021] transition">
+              Khám Phá
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Image -->
+          <div class="w-full md:w-1/2 relative">
+            <img src="./assets/home-slider-1-BvPaZjio.png" alt="Bánh Bao Kim Sa"
+              class="hero-image w-full max-w-md mx-auto md:max-w-full" />
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide overflow-hidden hero-slide flex items-center">
+        <div
+          class="max-w-7xl mx-auto px-4 py-12 gap-4  flex flex-col-reverse md:flex-row items-center justify-between w-full mt-16 sm:mt-20 md:mt-28 lg:mt-36">
+
+          <!-- Text Content -->
+          <div class="w-full md:w-1/2 text-white z-10 mt-8 md:mt-0">
+            <h1 class="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#FFCD27]">
+              Bánh Bao Kim Sa Trứng Muối
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6">
+              Mỗi chiếc bánh căng tròn, nhân thịt nóng hổi quyện cùng nước sốt sóng sánh bên trong, mang đến trải nghiệm
+              "cắn đâu, ngập nhân đến đó". Bánh bao xá xíu ngập nhân không chỉ no bụng mà còn đậm vị ngon khó quên, rất
+              thích hợp cho bữa sáng.
+            </p>
+            <a href="#"
+              class="inline-flex items-center gap-2 px-10 py-2 bg-[#E7292B] text-white text-base sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#c92021] transition">
+              Khám Phá
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Image -->
+          <div class="w-full md:w-1/2 relative">
+            <img src="./assets/home-slider-1-BvPaZjio.png" alt="Bánh Bao Kim Sa"
+              class="hero-image w-full max-w-md mx-auto md:max-w-full" />
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide overflow-hidden hero-slide flex items-center">
+        <div
+          class="max-w-7xl mx-auto px-4 py-12 gap-4  flex flex-col-reverse md:flex-row items-center justify-between w-full mt-16 sm:mt-20 md:mt-28 lg:mt-36">
+
+          <!-- Text Content -->
+          <div class="w-full md:w-1/2 text-white z-10 mt-8 md:mt-0">
+            <h1 class="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-bold mb-4 text-[#FFCD27]">
+              Bánh Bao Kim Sa Trứng Muối
+            </h1>
+            <p class="text-base sm:text-lg md:text-xl lg:text-2xl mb-6">
+              Mỗi chiếc bánh căng tròn, nhân thịt nóng hổi quyện cùng nước sốt sóng sánh bên trong, mang đến trải nghiệm
+              "cắn đâu, ngập nhân đến đó". Bánh bao xá xíu ngập nhân không chỉ no bụng mà còn đậm vị ngon khó quên, rất
+              thích hợp cho bữa sáng.
+            </p>
+            <a href="#"
+              class="inline-flex items-center gap-2 px-10 py-2 bg-[#E7292B] text-white text-base sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#c92021] transition">
+              Khám Phá
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Image -->
+          <div class="w-full md:w-1/2 relative">
+            <img src="./assets/home-slider-1-BvPaZjio.png" alt="Bánh Bao Kim Sa"
+              class="hero-image w-full max-w-md mx-auto md:max-w-full" />
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Arrows vertically centered -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- About us (Về chúng tôi) -->
+  <section class="relative flex items-center py-20 lg:py-8 pb-20 overflow-hidden lg:h-[800px] h-auto" style="
+      background-image: url('./assets/about-intro-bg-white-wave-85qhpl5_.png'), linear-gradient(#7A0202, #7A0202);
+      background-repeat: no-repeat, no-repeat;
+      background-position: center, 0 0;
+      background-size: cover, cover;
+    ">
+    <!-- Center Background Image -->
+    <img src="./assets/home-about-bg-center-BbDhbiGH.png" alt="Center Decoration"
+      class="absolute inset-0 mx-auto top-1/2 -translate-y-1/2 z-0 pointer-events-none max-w-[80%] opacity-5 filter invert md:max-w-[60%] lg:max-w-full" />
+
+    <!-- Decorative Images -->
+
+    <!-- Image 1: left large image - hide on <768px -->
+    <img src="./assets/home-about-1-CAkXOQgA.png" alt
+      class="absolute top-1/2 left-[-150px] z-10 w-[200px] h-[200px] -translate-y-1/2 hidden md:block lg:w-[276px] lg:h-[276px]" />
+
+    <!-- Image 2: float near center left - hide on <768px -->
+    <img src="./assets/home-about-2-M8e8fjtp.png" alt
+      class="absolute top-1/2 left-[10%] z-10 w-[100px] h-[100px] -translate-y-1/2 hidden md:block lg:left-[20%] lg:w-[134px] lg:h-[134px]" />
+
+    <!-- Image 3: top-left flower - hide on mobile -->
+    <img src="./assets/home-about-3-BVnLZT1E.png" alt
+      class="absolute top-32 left-[10%] z-10 w-[100px] h-[100px] hidden md:block lg:left-[20%] lg:w-[134px] lg:h-[134px]" />
+
+    <!-- Image 4: bottom-left - show from 768px -->
+    <img src="./assets/home-about-4-BM_eaE36.png" alt class="absolute bottom-10 hidden md:block 
+          left-[10%] md:left-[15%] lg:left-[18%] xl:left-[25%] 2xl:left-[30%]
+          w-[200px] h-[200px] lg:w-[300px] lg:h-[300px] z-10" />
+
+    <!-- Image 5: top-right - hide on mobile -->
+    <img src="./assets/home-about-5-Dl0mx5Eu.png" alt
+      class="absolute top-60 right-[-100px] z-10 w-[180px] h-[180px]  hidden lg:block" />
+
+    <!-- Image 6: bottom-right rotated - hide on tablet and smaller -->
+    <img src="./assets/home-about-6-BdrDX498.png" alt
+      class="absolute bottom-49 right-[-60px] z-10 w-[120px] h-[200px] rotate-[45deg] hidden lg:block" />
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-10 relative z-20">
+
+      <!-- Left Placeholder (you can add a real image later) -->
+      <div class="w-full md:w-1/2 relative">
+        <div>
+        </div>
+      </div>
+
+      <!-- Right: Text Content -->
+      <div class="w-full md:w-1/2 text-center md:text-left space-y-5">
+        <h4 class="text-lg md:text-xl font-bold text-[#5B5B5B] fade-right">Về chúng tôi</h4>
+        <h1 class="text-2xl  lg:text-4xl font-bold uppercase text-[#E7292B] fade-up delay-3s">Chào mừng đến
+          với Minh Hảo</h1>
+        <p class="text-sm md:text-base lg:text-base leading-relaxed text-black fade-up delay-5s">
+          <span class="font-bold">Cơ sở sản xuất bánh bao – bánh ngọt Minh Hảo</span> tự hào là thương hiệu hơn 20 năm
+          chinh phục khẩu vị người Việt bằng những chiếc bánh thơm ngon, chất lượng vượt trội.
+          Với thông điệp <span class="font-bold">“Uy tín lâu năm – sản phẩm chất lượng – mô hình kinh doanh đơn
+            giản”</span>,
+          Minh Hảo không chỉ mang đến món ăn tiện lợi mà còn là cơ hội kinh doanh ít rủi ro.
+          Từng chiếc bánh được chăm chút kỹ lưỡng, không chạy theo số lượng, mà tập trung vào
+          <span class="font-bold">giá trị thực và trải nghiệm thực sự.</span>
+        </p>
+        <a href="#"
+          class="inline-flex fade-up delay-8s items-center gap-2 px-8 py-2 bg-[#E7292B] text-white text-base md:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#c92021] transition duration-300">
+          Xem thêm
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature products (Sản phẩm nổi bật) -->
+  <section class=" bg-white overflow-x-visible">
+    <div class="relative overflow-visible  mx-auto">
+
+      <div class="flex flex-col items-center text-center">
+        <h1 class="text-3xl font-bold  text-[#E7292B] uppercase fade-up">Sản phẩm
+          nổi bật</h1>
+        <p class="text-black fade-up delay-2s">Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm,
+          chiếc bánh mới thật sự chất lượng</p>
+      </div>
+
+      <div class="swiper home-feature-swiper overflow-visible fade-up delay-4s">
+        <div class="swiper-wrapper py-12">
+          <!-- Slide 1 -->
+          <div
+            class="swiper-slide flex-shrink-0 flex flex-col items-center justify-center overflow-visible relative text-center">
+            <!-- Image block -->
+            <div
+              class="relative aspect-square w-[300px] sm:w-[400px] md:w-[500px] mx-auto overflow-visible flex items-center justify-center transition-all duration-300">
+              <!-- Background image -->
+              <img src="./assets/home-feature-product-bg-1-DNwVvlHm.png" alt="Product Background"
+                class="product-bg absolute inset-0 w-full h-full object-contain z-0 pointer-events-none transition-all duration-700 ease-out opacity-0">
+              <!-- Foreground image -->
+              <img src="./assets/home-feature-product-1-C10Ii35h.png" alt="Product"
+                class="relative z-1 w-full h-full object-contain product-image">
+            </div>
+
+            <!-- Title & description block -->
+
+            <div class="product-content mt-6 items-center opacity-0 transition-all duration-700 ease-out text-center">
+
+              <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#E7292B] mb-2">
+                BÁNH BAO XÁ XÍU
+              </h1>
+
+              <!-- Description Text -->
+              <p class="text-sm md:text-base text-black mb-4 md:whitespace-nowrap max-w-[320px] md:max-w-none mx-auto">
+                Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm, chiếc bánh mới thật sự chất lượng
+              </p>
+
+              <!-- Button Group -->
+              <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
+                <!-- Left Button -->
+                <a href="#"
+                  class="inline-flex items-center gap-1 px-3 py-[5px] sm:px-10 sm:py-1 bg-[#E7292B] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#d32628] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+                  Xem chi tiết <i class="fas fa-arrow-right text-[10px] sm:text-base"></i>
+                </a>
+
+
+
+                <!-- Right Button with Circle -->
+                <a href="#"
+                  class="inline-flex items-center gap-2 sm:gap-4 px-1 pr-2 sm:px-1 sm:pr-4 py-[5px] sm:py-1 bg-[#FC5722] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#e94c1d] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+
+                  <!-- Circle icon -->
+                  <span
+                    class="w-7 h-7 sm:w-[47px] sm:h-[47px] bg-white rounded-full flex items-center justify-center shrink-0">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKSSURBVHgBtVZdUtRAEP66swF8MjdwwAOoJ2C9QbAs4A08AeUJgBMoJxDeKLRkOQG5gXgAZTgB4QnYzUzbk80qCJsElv2qsqnNdM83/TtNaInLVWNmhDcFSPVvQiInIrzT+fprt40+tRGqSI6VJBGPPWFYBhZ1KSXBVnTwe/tJiNzKwqmSYED+7bN9a0ffB6sLW0q0Kfo93rcZJkGx/DItVhakWDbpvesr88fhadqH0Yw1fWznwPbuXdU4qWO68m7+BSYiIulqXI7GLUd9l4X3IKYlPJZIUpMgJADoZJwM9WyugbYR8Kpur074uUyN6XRg/l90VH0TSQbvTXfsLiK5qOw4mfibzSikbix8iilCIEccOSSYMtS1z9lFyDFlaA1edOaukLvZ1iqZZuGeKlrySDwoZaK1Ji0GnZedIRRkIwVhW9j3Iscb6nOjDsnh6Uj9kiv5Ya2ux06ZdSE9lcnUyNoCfjd2/CP0u7+diyV0i2bX62GGdST1wmrBzxjoAvcmTmMyiZAtiYQkrz8QLQ6ALFiOR4DJDS3ygrMG2URrbbOvXTrE6qGEeq3kbZrqCOtKdkxO3XDt34SrIVx+bRTFVUTqGot2MJoAX9wsn7PwWp9lKVjYpBQ7On+IRbdPWVkozvfK+qoBfT89G1rE3uJxMBHzRijiJsG2FtVmpRcem+KjxCkLVgptKVHNTuI/6JES8rQhRK9vLGR9ku1qcBmnnP8j0sqtnVKID3UI2e2zXwrRUSVThMtOO3/M/Kmuq0jljZIodHBu6HZV8NdRKsrJDMhofRigUe8ivMsYVSNU2+siKYcRNJOU8MPSuZkMGaaAIvKfbxFF1xpwoR6eDrkHPo4Gzjs5ECafq7nJr/ebE23AH9EbFubI3vaoAAAAAElFTkSuQmCC" alt="icon" class="w-[14px] h-[14px] sm:w-6 sm:h-6" />
+                  </span>
+
+                  ĐẶT HÀNG SHOPEE
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- Slide 2 -->
+          <div
+            class="swiper-slide flex-shrink-0 flex flex-col items-center justify-center overflow-visible relative text-center">
+            <!-- Image block -->
+            <div
+              class="relative aspect-square w-[300px] sm:w-[400px] md:w-[500px] mx-auto overflow-visible flex items-center justify-center transition-all duration-300">
+              <!-- Background image -->
+              <img src="./assets/home-feature-product-bg-1-DNwVvlHm.png" alt="Product Background"
+                class="product-bg absolute inset-0 w-full h-full object-contain z-0 pointer-events-none transition-all duration-700 ease-out opacity-0">
+              <!-- Foreground image -->
+              <img src="./assets/home-feature-product-2-BUS1gCeP.png" alt="Product 2"
+                class="relative z-1 w-full h-full object-contain product-image">
+            </div>
+
+            <!-- Title & description block -->
+
+            <div class="product-content mt-6 items-center opacity-0 transition-all duration-700 ease-out text-center">
+
+              <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#E7292B] mb-2">
+                BÁNH BAO XÁ XÍU
+              </h1>
+
+              <!-- Description Text -->
+              <p class="text-sm md:text-base text-black mb-4 md:whitespace-nowrap max-w-[320px] md:max-w-none mx-auto">
+                Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm, chiếc bánh mới thật sự chất lượng
+              </p>
+
+              <!-- Button Group -->
+              <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
+                <!-- Left Button -->
+                <a href="#"
+                  class="inline-flex items-center gap-1 px-3 py-[5px] sm:px-10 sm:py-1 bg-[#E7292B] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#d32628] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+                  Xem chi tiết <i class="fas fa-arrow-right text-[10px] sm:text-base"></i>
+                </a>
+
+
+
+                <!-- Right Button with Circle -->
+                <a href="#"
+                  class="inline-flex items-center gap-2 sm:gap-4 px-1 pr-2 sm:px-1 sm:pr-4 py-[5px] sm:py-1 bg-[#FC5722] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#e94c1d] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+
+                  <!-- Circle icon -->
+                  <span
+                    class="w-7 h-7 sm:w-[47px] sm:h-[47px] bg-white rounded-full flex items-center justify-center shrink-0">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKSSURBVHgBtVZdUtRAEP66swF8MjdwwAOoJ2C9QbAs4A08AeUJgBMoJxDeKLRkOQG5gXgAZTgB4QnYzUzbk80qCJsElv2qsqnNdM83/TtNaInLVWNmhDcFSPVvQiInIrzT+fprt40+tRGqSI6VJBGPPWFYBhZ1KSXBVnTwe/tJiNzKwqmSYED+7bN9a0ffB6sLW0q0Kfo93rcZJkGx/DItVhakWDbpvesr88fhadqH0Yw1fWznwPbuXdU4qWO68m7+BSYiIulqXI7GLUd9l4X3IKYlPJZIUpMgJADoZJwM9WyugbYR8Kpur074uUyN6XRg/l90VH0TSQbvTXfsLiK5qOw4mfibzSikbix8iilCIEccOSSYMtS1z9lFyDFlaA1edOaukLvZ1iqZZuGeKlrySDwoZaK1Ji0GnZedIRRkIwVhW9j3Iscb6nOjDsnh6Uj9kiv5Ya2ux06ZdSE9lcnUyNoCfjd2/CP0u7+diyV0i2bX62GGdST1wmrBzxjoAvcmTmMyiZAtiYQkrz8QLQ6ALFiOR4DJDS3ygrMG2URrbbOvXTrE6qGEeq3kbZrqCOtKdkxO3XDt34SrIVx+bRTFVUTqGot2MJoAX9wsn7PwWp9lKVjYpBQ7On+IRbdPWVkozvfK+qoBfT89G1rE3uJxMBHzRijiJsG2FtVmpRcem+KjxCkLVgptKVHNTuI/6JES8rQhRK9vLGR9ku1qcBmnnP8j0sqtnVKID3UI2e2zXwrRUSVThMtOO3/M/Kmuq0jljZIodHBu6HZV8NdRKsrJDMhofRigUe8ivMsYVSNU2+siKYcRNJOU8MPSuZkMGaaAIvKfbxFF1xpwoR6eDrkHPo4Gzjs5ECafq7nJr/ebE23AH9EbFubI3vaoAAAAAElFTkSuQmCC" alt="icon" class="w-[14px] h-[14px] sm:w-6 sm:h-6" />
+                  </span>
+
+                  ĐẶT HÀNG SHOPEE
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- Slide 3 -->
+          <div
+            class="swiper-slide flex-shrink-0 flex flex-col items-center justify-center overflow-visible relative text-center">
+            <!-- Image block -->
+            <div
+              class="relative aspect-square w-[300px] sm:w-[400px] md:w-[500px] mx-auto overflow-visible flex items-center justify-center transition-all duration-300">
+              <!-- Background image -->
+              <img src="./assets/home-feature-product-bg-1-DNwVvlHm.png" alt="Product Background"
+                class="product-bg absolute inset-0 w-full h-full object-contain z-0 pointer-events-none transition-all duration-700 ease-out opacity-0">
+              <!-- Foreground image -->
+              <img src="./assets/home-feature-product-3-Ca_WAzyx.png" alt="Product 3"
+                class="relative z-1 w-full h-full object-contain product-image">
+            </div>
+
+            <!-- Title & description block -->
+
+            <div class="product-content mt-6 items-center opacity-0 transition-all duration-700 ease-out text-center">
+
+              <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#E7292B] mb-2">
+                BÁNH BAO XÁ XÍU
+              </h1>
+
+              <!-- Description Text -->
+              <p class="text-sm md:text-base text-black mb-4 md:whitespace-nowrap max-w-[320px] md:max-w-none mx-auto">
+                Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm, chiếc bánh mới thật sự chất lượng
+              </p>
+
+              <!-- Button Group -->
+              <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
+                <!-- Left Button -->
+                <a href="#"
+                  class="inline-flex items-center gap-1 px-3 py-[5px] sm:px-10 sm:py-1 bg-[#E7292B] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#d32628] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+                  Xem chi tiết <i class="fas fa-arrow-right text-[10px] sm:text-base"></i>
+                </a>
+
+
+
+                <!-- Right Button with Circle -->
+                <a href="#"
+                  class="inline-flex items-center gap-2 sm:gap-4 px-1 pr-2 sm:px-1 sm:pr-4 py-[5px] sm:py-1 bg-[#FC5722] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#e94c1d] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+
+                  <!-- Circle icon -->
+                  <span
+                    class="w-7 h-7 sm:w-[47px] sm:h-[47px] bg-white rounded-full flex items-center justify-center shrink-0">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKSSURBVHgBtVZdUtRAEP66swF8MjdwwAOoJ2C9QbAs4A08AeUJgBMoJxDeKLRkOQG5gXgAZTgB4QnYzUzbk80qCJsElv2qsqnNdM83/TtNaInLVWNmhDcFSPVvQiInIrzT+fprt40+tRGqSI6VJBGPPWFYBhZ1KSXBVnTwe/tJiNzKwqmSYED+7bN9a0ffB6sLW0q0Kfo93rcZJkGx/DItVhakWDbpvesr88fhadqH0Yw1fWznwPbuXdU4qWO68m7+BSYiIulqXI7GLUd9l4X3IKYlPJZIUpMgJADoZJwM9WyugbYR8Kpur074uUyN6XRg/l90VH0TSQbvTXfsLiK5qOw4mfibzSikbix8iilCIEccOSSYMtS1z9lFyDFlaA1edOaukLvZ1iqZZuGeKlrySDwoZaK1Ji0GnZedIRRkIwVhW9j3Iscb6nOjDsnh6Uj9kiv5Ya2ux06ZdSE9lcnUyNoCfjd2/CP0u7+diyV0i2bX62GGdST1wmrBzxjoAvcmTmMyiZAtiYQkrz8QLQ6ALFiOR4DJDS3ygrMG2URrbbOvXTrE6qGEeq3kbZrqCOtKdkxO3XDt34SrIVx+bRTFVUTqGot2MJoAX9wsn7PwWp9lKVjYpBQ7On+IRbdPWVkozvfK+qoBfT89G1rE3uJxMBHzRijiJsG2FtVmpRcem+KjxCkLVgptKVHNTuI/6JES8rQhRK9vLGR9ku1qcBmnnP8j0sqtnVKID3UI2e2zXwrRUSVThMtOO3/M/Kmuq0jljZIodHBu6HZV8NdRKsrJDMhofRigUe8ivMsYVSNU2+siKYcRNJOU8MPSuZkMGaaAIvKfbxFF1xpwoR6eDrkHPo4Gzjs5ECafq7nJr/ebE23AH9EbFubI3vaoAAAAAElFTkSuQmCC" alt="icon" class="w-[14px] h-[14px] sm:w-6 sm:h-6" />
+                  </span>
+
+                  ĐẶT HÀNG SHOPEE
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- Slide 4 -->
+          <div
+            class="swiper-slide flex-shrink-0 flex flex-col items-center justify-center overflow-visible relative text-center">
+            <!-- Image block -->
+            <div
+              class="relative aspect-square w-[300px] sm:w-[400px] md:w-[500px] mx-auto overflow-visible flex items-center justify-center transition-all duration-300">
+              <!-- Background image -->
+              <img src="./assets/home-feature-product-bg-1-DNwVvlHm.png" alt="Product Background"
+                class="product-bg absolute inset-0 w-full h-full object-contain z-0 pointer-events-none transition-all duration-700 ease-out opacity-0">
+              <!-- Foreground image -->
+              <img src="./assets/home-feature-product-1-C10Ii35h.png" alt="Product"
+                class="relative z-1 w-full h-full object-contain product-image">
+            </div>
+
+            <!-- Title & description block -->
+
+            <div class="product-content mt-6 items-center opacity-0 transition-all duration-700 ease-out text-center">
+
+              <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#E7292B] mb-2">
+                BÁNH BAO XÁ XÍU
+              </h1>
+
+              <!-- Description Text -->
+              <p class="text-sm md:text-base text-black mb-4 md:whitespace-nowrap max-w-[320px] md:max-w-none mx-auto">
+                Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm, chiếc bánh mới thật sự chất lượng
+              </p>
+
+              <!-- Button Group -->
+              <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
+                <!-- Left Button -->
+                <a href="#"
+                  class="inline-flex items-center gap-1 px-3 py-[5px] sm:px-10 sm:py-1 bg-[#E7292B] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#d32628] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+                  Xem chi tiết <i class="fas fa-arrow-right text-[10px] sm:text-base"></i>
+                </a>
+
+
+
+                <!-- Right Button with Circle -->
+                <a href="#"
+                  class="inline-flex items-center gap-2 sm:gap-4 px-1 pr-2 sm:px-1 sm:pr-4 py-[5px] sm:py-1 bg-[#FC5722] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#e94c1d] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+
+                  <!-- Circle icon -->
+                  <span
+                    class="w-7 h-7 sm:w-[47px] sm:h-[47px] bg-white rounded-full flex items-center justify-center shrink-0">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKSSURBVHgBtVZdUtRAEP66swF8MjdwwAOoJ2C9QbAs4A08AeUJgBMoJxDeKLRkOQG5gXgAZTgB4QnYzUzbk80qCJsElv2qsqnNdM83/TtNaInLVWNmhDcFSPVvQiInIrzT+fprt40+tRGqSI6VJBGPPWFYBhZ1KSXBVnTwe/tJiNzKwqmSYED+7bN9a0ffB6sLW0q0Kfo93rcZJkGx/DItVhakWDbpvesr88fhadqH0Yw1fWznwPbuXdU4qWO68m7+BSYiIulqXI7GLUd9l4X3IKYlPJZIUpMgJADoZJwM9WyugbYR8Kpur074uUyN6XRg/l90VH0TSQbvTXfsLiK5qOw4mfibzSikbix8iilCIEccOSSYMtS1z9lFyDFlaA1edOaukLvZ1iqZZuGeKlrySDwoZaK1Ji0GnZedIRRkIwVhW9j3Iscb6nOjDsnh6Uj9kiv5Ya2ux06ZdSE9lcnUyNoCfjd2/CP0u7+diyV0i2bX62GGdST1wmrBzxjoAvcmTmMyiZAtiYQkrz8QLQ6ALFiOR4DJDS3ygrMG2URrbbOvXTrE6qGEeq3kbZrqCOtKdkxO3XDt34SrIVx+bRTFVUTqGot2MJoAX9wsn7PwWp9lKVjYpBQ7On+IRbdPWVkozvfK+qoBfT89G1rE3uJxMBHzRijiJsG2FtVmpRcem+KjxCkLVgptKVHNTuI/6JES8rQhRK9vLGR9ku1qcBmnnP8j0sqtnVKID3UI2e2zXwrRUSVThMtOO3/M/Kmuq0jljZIodHBu6HZV8NdRKsrJDMhofRigUe8ivMsYVSNU2+siKYcRNJOU8MPSuZkMGaaAIvKfbxFF1xpwoR6eDrkHPo4Gzjs5ECafq7nJr/ebE23AH9EbFubI3vaoAAAAAElFTkSuQmCC" alt="icon" class="w-[14px] h-[14px] sm:w-6 sm:h-6" />
+                  </span>
+
+                  ĐẶT HÀNG SHOPEE
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+          <!-- Slide 5 -->
+          <div
+            class="swiper-slide flex-shrink-0 flex flex-col items-center justify-center overflow-visible relative text-center">
+            <!-- Image block -->
+            <div
+              class="relative aspect-square w-[300px] sm:w-[400px] md:w-[500px] mx-auto overflow-visible flex items-center justify-center transition-all duration-300">
+              <!-- Background image -->
+              <img src="./assets/home-feature-product-bg-1-DNwVvlHm.png" alt="Product Background"
+                class="product-bg absolute inset-0 w-full h-full object-contain z-0 pointer-events-none transition-all duration-700 ease-out opacity-0">
+              <!-- Foreground image -->
+              <img src="./assets/home-feature-product-2-BUS1gCeP.png" alt="Product 2"
+                class="relative z-1 w-full h-full object-contain product-image">
+            </div>
+
+            <!-- Title & description block -->
+
+            <div class="product-content mt-6 items-center opacity-0 transition-all duration-700 ease-out text-center">
+
+              <h1 class="text-xl sm:text-2xl md:text-3xl font-bold text-[#E7292B] mb-2">
+                BÁNH BAO XÁ XÍU
+              </h1>
+
+              <!-- Description Text -->
+              <p class="text-sm md:text-base text-black mb-4 md:whitespace-nowrap max-w-[320px] md:max-w-none mx-auto">
+                Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm, chiếc bánh mới thật sự chất lượng
+              </p>
+
+              <!-- Button Group -->
+              <div class="flex flex-wrap justify-center gap-2 sm:gap-4">
+                <!-- Left Button -->
+                <a href="#"
+                  class="inline-flex items-center gap-1 px-3 py-[5px] sm:px-10 sm:py-1 bg-[#E7292B] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#d32628] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+                  Xem chi tiết <i class="fas fa-arrow-right text-[10px] sm:text-base"></i>
+                </a>
+
+
+
+                <!-- Right Button with Circle -->
+                <a href="#"
+                  class="inline-flex items-center gap-2 sm:gap-4 px-1 pr-2 sm:px-1 sm:pr-4 py-[5px] sm:py-1 bg-[#FC5722] text-white text-xs sm:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#e94c1d] transition-all duration-300 ease-in-out shadow-lg hover:shadow-md hover:-translate-y-1">
+
+                  <!-- Circle icon -->
+                  <span
+                    class="w-7 h-7 sm:w-[47px] sm:h-[47px] bg-white rounded-full flex items-center justify-center shrink-0">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAdCAYAAAC0T3x2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKSSURBVHgBtVZdUtRAEP66swF8MjdwwAOoJ2C9QbAs4A08AeUJgBMoJxDeKLRkOQG5gXgAZTgB4QnYzUzbk80qCJsElv2qsqnNdM83/TtNaInLVWNmhDcFSPVvQiInIrzT+fprt40+tRGqSI6VJBGPPWFYBhZ1KSXBVnTwe/tJiNzKwqmSYED+7bN9a0ffB6sLW0q0Kfo93rcZJkGx/DItVhakWDbpvesr88fhadqH0Yw1fWznwPbuXdU4qWO68m7+BSYiIulqXI7GLUd9l4X3IKYlPJZIUpMgJADoZJwM9WyugbYR8Kpur074uUyN6XRg/l90VH0TSQbvTXfsLiK5qOw4mfibzSikbix8iilCIEccOSSYMtS1z9lFyDFlaA1edOaukLvZ1iqZZuGeKlrySDwoZaK1Ji0GnZedIRRkIwVhW9j3Iscb6nOjDsnh6Uj9kiv5Ya2ux06ZdSE9lcnUyNoCfjd2/CP0u7+diyV0i2bX62GGdST1wmrBzxjoAvcmTmMyiZAtiYQkrz8QLQ6ALFiOR4DJDS3ygrMG2URrbbOvXTrE6qGEeq3kbZrqCOtKdkxO3XDt34SrIVx+bRTFVUTqGot2MJoAX9wsn7PwWp9lKVjYpBQ7On+IRbdPWVkozvfK+qoBfT89G1rE3uJxMBHzRijiJsG2FtVmpRcem+KjxCkLVgptKVHNTuI/6JES8rQhRK9vLGR9ku1qcBmnnP8j0sqtnVKID3UI2e2zXwrRUSVThMtOO3/M/Kmuq0jljZIodHBu6HZV8NdRKsrJDMhofRigUe8ivMsYVSNU2+siKYcRNJOU8MPSuZkMGaaAIvKfbxFF1xpwoR6eDrkHPo4Gzjs5ECafq7nJr/ebE23AH9EbFubI3vaoAAAAAElFTkSuQmCC" alt="icon" class="w-[14px] h-[14px] sm:w-6 sm:h-6" />
+                  </span>
+
+                  ĐẶT HÀNG SHOPEE
+                </a>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Quality (Chất lượng từ tâm) -->
+  <section class="relative lg:py-40 overflow-visible lg:min-h-[1200px] min-h-[600px] md:min-h-[700px]"
+    style="background: var(--main-bg);">
+
+    <!-- Decorative Images Left-->
+    <img src="./assets/home-quality-1-BGbwxTho.png" alt=""
+      class="hidden md:block absolute top-[25%] left-[-5%] z-1 md:scale-60 lg:scale-100 origin-top-left transition-transform duration-300" />
+
+    <img src="./assets/home-quality-2-DuIXjT7s.png" alt=""
+      class="hidden md:block absolute top-[40%] left-[-5%] z-1 md:scale-60 lg:scale-100 origin-top-left transition-transform duration-300" />
+
+
+    <!-- Decorative Images Right - hidden on small screens -->
+    <img src="./assets/home-quality-3-DmAPvujb.png" alt=""
+      class="absolute top-[-5%] right-0 z-1 md:scale-70 lg:scale-100  hidden sm:block w-24 md:w-auto" />
+
+    <!-- Main Container -->
+    <div class="max-w-7xl mx-auto px-4 relative z-20 flex flex-col md:flex-row items-start gap-10">
+
+      <!-- Left Side -->
+      <div class="w-full md:w-1/2">
+        <!-- Optional image or content here -->
+      </div>
+
+      <!-- Right Side: 2x2 Grid -->
+      <div class="w-full md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3 sm:mt-20 md:mt-40 lg:mt-0">
+
+        <!-- Box 1 -->
+        <div
+          class="bg-white p-2 sm:p-3 lg:p-6 rounded-xl lg:rounded-2xl shadow border-2 lg:border-4 border-[#63B343] fade-up delay-4s">
+          <h1 class="text-xl sm:text-2xl lg:text-6xl font-bold mb-1 stroke-fill-green">01.</h1>
+          <h2 class="text-[10px] sm:text-xs lg:text-lg font-bold mb-1 text-[#63B343] uppercase">Nguyên liệu tinh chọn
+          </h2>
+          <p class="text-[10px] sm:text-xs lg:text-base text-black leading-snug">
+            Chất lượng bánh bao bắt đầu từ những nguyên liệu tốt nhất: bột mì hảo hạng, thịt tươi trong ngày, rau củ
+            sạch
+            không thuốc bảo vệ thực vật.
+          </p>
+        </div>
+
+        <!-- Box 2 -->
+        <div
+          class="relative md:-top-2 lg:-top-4 bg-white p-2 sm:p-3 lg:p-6 rounded-xl lg:rounded-2xl shadow border-2 lg:border-4 border-[#79D2F7] fade-up delay-6s">
+          <h1 class="text-xl sm:text-2xl lg:text-6xl font-bold mb-1 stroke-fill-blue">02.</h1>
+          <h2 class="text-[10px] sm:text-xs lg:text-lg font-bold mb-1 text-[#79D2F7] uppercase">Quy trình kiểm soát</h2>
+          <p class="text-[10px] sm:text-xs lg:text-base text-black leading-snug">
+            Chúng tôi áp dụng quy trình kiểm soát nghiêm ngặt từ khâu chọn nguyên liệu, chế biến, đến đóng gói – đảm bảo
+            mỗi chiếc bánh đạt tiêu chuẩn cao nhất.
+          </p>
+        </div>
+
+        <!-- Box 3 -->
+        <div
+          class="bg-white p-2 sm:p-3 lg:p-6 rounded-xl lg:rounded-2xl shadow border-2 lg:border-4 border-[#DEAC50] fade-up delay-8s">
+          <h1 class="text-xl sm:text-2xl lg:text-6xl font-bold mb-1 stroke-fill-yellow">03.</h1>
+          <h2 class="text-[10px] sm:text-xs lg:text-lg font-bold mb-1 text-[#DEAC50] uppercase">Đội ngũ tâm huyết</h2>
+          <p class="text-[10px] sm:text-xs lg:text-base text-black leading-snug">
+            Đội ngũ nhân viên giàu kinh nghiệm, tận tâm trong từng khâu sản xuất, luôn đặt chất lượng và sức khỏe người
+            tiêu dùng lên hàng đầu.
+          </p>
+        </div>
+
+        <!-- Box 4 -->
+        <div
+          class="relative md:-top-2 lg:-top-4 bg-white p-2 sm:p-3 lg:p-6 rounded-xl lg:rounded-2xl shadow border-2 lg:border-4 border-[#DD3C27] fade-up delay-10s">
+          <h1 class="text-xl sm:text-2xl lg:text-6xl font-bold mb-1 stroke-fill-red">04.</h1>
+          <h2 class="text-[10px] sm:text-xs lg:text-lg font-bold mb-1 text-[#DD3C27] uppercase">Cam kết bền vững</h2>
+          <p class="text-[10px] sm:text-xs lg:text-base text-black leading-snug">
+            Chúng tôi không chỉ làm bánh ngon mà còn chú trọng đến môi trường: bao bì thân thiện và quy trình sản xuất
+            tiết kiệm năng lượng.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Top Wave -->
+    <img src="data:image/svg+xml,%3csvg%20id='visual'%20viewBox='0%200%20900%20600'%20width='900'%20height='600'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20version='1.1'%3e%3cpath%20d='M0%2042L30%2049.8C60%2057.7%20120%2073.3%20180%2075C240%2076.7%20300%2064.3%20360%2057.2C420%2050%20480%2048%20540%2040.7C600%2033.3%20660%2020.7%20720%2017.5C780%2014.3%20840%2020.7%20870%2023.8L900%2027L900%200L870%200C840%200%20780%200%20720%200C660%200%20600%200%20540%200C480%200%20420%200%20360%200C300%200%20240%200%20180%200C120%200%2060%200%2030%200L0%200Z'%20fill='%23FFFFFF'%20stroke-linecap='round'%20stroke-linejoin='miter'%3e%3c/path%3e%3c/svg%3e"
+      class="absolute top-0 left-0 w-full h-autoz-0 pointer-events-none" alt="Top Wave" />
+
+    <!-- Bottom Wave -->
+    <img src="data:image/svg+xml,%3csvg%20id='visual'%20viewBox='0%200%20900%20600'%20width='900'%20height='600'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20version='1.1'%3e%3cpath%20d='M0%20567L12.5%20558.8C25%20550.7%2050%20534.3%2075%20525.2C100%20516%20125%20514%20150%20514C175%20514%20200%20516%20225%20521.8C250%20527.7%20275%20537.3%20300%20536.8C325%20536.3%20350%20525.7%20375%20519.5C400%20513.3%20425%20511.7%20450%20514.7C475%20517.7%20500%20525.3%20525%20532.5C550%20539.7%20575%20546.3%20600%20543.3C625%20540.3%20650%20527.7%20675%20524.2C700%20520.7%20725%20526.3%20750%20526.3C775%20526.3%20800%20520.7%20825%20523.3C850%20526%20875%20537%20887.5%20542.5L900%20548L900%20601L887.5%20601C875%20601%20850%20601%20825%20601C800%20601%20775%20601%20750%20601C725%20601%20700%20601%20675%20601C650%20601%20625%20601%20600%20601C575%20601%20550%20601%20525%20601C500%20601%20475%20601%20450%20601C425%20601%20400%20601%20375%20601C350%20601%20325%20601%20300%20601C275%20601%20250%20601%20225%20601C200%20601%20175%20601%20150%20601C125%20601%20100%20601%2075%20601C50%20601%2025%20601%2012.5%20601L0%20601Z'%20fill='%23FFEECF'%20stroke-linecap='round'%20stroke-linejoin='miter'%3e%3c/path%3e%3c/svg%3e"
+      class="absolute bottom-0 left-0 w-full h-auto z-0 pointer-events-none" alt="Bottom Wave" />
+
+    <!-- Jumping Animation 1 -->
+    <img src="./assets/home-quality-jumping-animation-1-By9t71HP.png" class="absolute top-[-8%] sm:top-[-2%] left-[10%] sm:left-[5%] z-1 animate-float pointer-events-none
+          w-12 sm:w-16 md:w-36  xl:w-auto" alt="Jumping Animation 1" />
+
+    <!-- Jumping Animation 2 -->
+    <img src="./assets/home-quality-jumping-animation-2-CdCeZL2-.png" class="absolute bottom-0 right-[10%] sm:right-[5%] z-1 animate-float pointer-events-none
+          w-12 sm:w-16 md:w-36 xl:w-auto" alt="Jumping Animation 2" />
+
+  </section>
+
+  <!-- Sales system Map (biểu đồ hệ thống bán hàng) -->
+  <section class="relative min-h-[900px] bg-[#FFEECF] overflow-visible hidden xl:block ">
+
+    <!-- Left content -->
+    <div class="max-w-2xl pl-36 pt-52 z-0 relative">
+      <h2 class="text-xl font-semibold text-black fade-left">Minh Hảo đi muôn nơi!</h2>
+      <h1 class="text-3xl font-bold text-[#E7292B] mt-2 mb-4 uppercase fade-left delay-200">Hệ Thống Bán hàng</h1>
+      <p class="text-2xl text-black leading-relaxed fade-left delay-4s">
+        Chúng tôi chuyên <span class="font-bold">sản xuất cung cấp</span> cho các khách hàng ở các tỉnh thành khu vực
+        <span class="font-bold">Miền Nam và Miền Trung.</span>
+      </p>
+    </div>
+
+
+
+    <!-- Left Decorative -->
+    <div class="absolute bottom-0 left-0 inset-0">
+      <div class="absolute bottom-[17%] left-[10%] z-1"><img src="./assets/home-sale-minh-hao-BY-LbrFc.png" alt="Minh Hao"
+          class="w-full h-auto xl:scale-100 ..." /></div>
+      <div class="absolute bottom-[9%] left-[-7%] z-0"><img src="./assets/home-sale-flour-left-ozyyz6kp.png"
+          alt="Flour Left" class="w-full h-auto xl:scale-100 ..." /></div>
+    </div>
+
+    <!-- Right Decorative -->
+    <div class="absolute bottom-0 right-0 inset-0">
+      <div class="absolute bottom-[12%] right-[-7%] z-1"><img src="./assets/home-sale-banh-bao-BNTvG232.png" alt="Banh Bao"
+          class="w-full h-auto xl:scale-100 ..." /></div>
+      <div class="absolute bottom-[5%] right-[2%] z-0"><img src="./assets/home-sale-flour-right-1--9UUhWJu.png"
+          alt="Flour Right 1" class="w-full h-auto xl:scale-100 ..." /></div>
+      <div class="absolute bottom-[11%] right-[-5%] z-0"><img src="./assets/home-sale-flour-right-2-D9E9P_T_.png"
+          alt="Flour Right 2" class="w-full h-auto xl:scale-100 ..." /></div>
+    </div>
+
+
+    <!-- Floating Image -->
+    <div class="absolute top-[10%] right-[9%] z-0 animate-float">
+      <img src="./assets/home-sale-jumping-animation-2-NQA9W0Ga.png" alt="Jumping"
+        class="w-full h-auto xl:scale-100 ..." />
+    </div>
+  </section>
+
+  <!-- Mobile/Tablet Version (below xl) -->
+  <section class="relative bg-[#FFEECF] overflow-hidden block xl:hidden py-12 px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 items-start">
+
+      <!-- Left Column: Text + Left Decorative -->
+      <div class="space-y-6 relative z-10">
+        <!-- Text Content -->
+        <div class="pt-8 md:pt-64">
+          <h2 class="text-lg font-semibold text-black fade-left">Minh Hảo đi muôn nơi!</h2>
+          <h1 class="text-2xl font-bold text-[#E7292B] mt-2 mb-4 uppercase fade-left delay-200">Hệ Thống Bán hàng</h1>
+          <p class="text-lg text-black leading-relaxed fade-left delay-4s">
+            Chúng tôi chuyên <span class="font-bold">sản xuất cung cấp</span> cho các khách hàng ở các tỉnh thành khu
+            vực
+            <span class="font-bold">Miền Nam và Miền Trung.</span>
+          </p>
+        </div>
+
+        <!-- Left Decorative -->
+        <div class="relative hidden md:block">
+          <img src="./assets/home-sale-minh-hao-BY-LbrFc.png" alt="Minh Hao" class="w-[250px] relative z-10" />
+        </div>
+      </div>
+
+      <!-- Right Column: Map with small height and scaled icons -->
+      <div class="hidden sm:block relative w-full aspect-[1] md:aspect-[0.5] overflow-hidden">
+
+        <!-- Map Image -->
+        <img src="./assets/home-sale-map-mobile-1-DLGY_Dur.png" alt="VN Map 1"
+          class="absolute inset-0 w-full h-full object-contain" />
+        <!-- Positioned Overlays (relative to aspect container) -->
+        <div class="absolute inset-0">
+
+          <!-- Labels -->
+          <p class="absolute text-lg font-semibold text-black top-[13%] left-[39%]">Ha Noi</p>
+          <p class="absolute text-lg font-semibold text-black bottom-[10%] left-[56%]">Ho Chi Minh</p>
+
+          <!-- Store Icons -->
+          <img src="data:image/png;base64,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" alt="Store 1"
+            class="absolute top-[30%] left-[44%] h-auto md:scale-100 scale-75" />
+          <img src="./assets/home-sale-store-2-D__NdXbV.png" alt="Store 2"
+            class="absolute top-[50%] right-[27%] md:right-[11%] h-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,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" alt="Store 3"
+            class="absolute bottom-[27%] right-[28%] md:right-[10%] h-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,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" alt="Store 4"
+            class="absolute bottom-[13%] right-[29%] md:right-[23%] h-auto md:scale-100 scale-75" />
+
+          <!-- Dots -->
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAwCAYAAADpVKHaAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOzSURBVHgBxVgxTxsxFH42DcpA4VREBBLQMIPUdIWhMLK0MLEBWTpCkWAGVmAANsSQMDJx6h8ABlibSuy9AgMC1B6IqggI7nt3CcR3zp0vOdRPSnxnP/t7z/Z7z2cGmhCGYUAiMYKP74CxNJaZUpMNQthYFrB+H+7u9pht2zpjsjABJE0j6TQOPImvBuhAiDzc3y+iEhbUQl6ydB5Jv0CtEGK1pIStTe5Y29i4i49pqB8WLsWQahZYZOKuLoCBAYDOTvf55ATg+hrg8BDg6AiiKMC0ifv7Aebm3LIaSJHlZYDtbS0FZPJU6oePmKxbXw8mVSkxOuqWMgrs/Px9+YVXEM8riXd2ohFX9uvr87ZkkGeh/OJYrpzu8gBU1gr1DNg4/T3kAa7licQgeK2m9a2HmFBeMhkGGuq4r0vO2LSv09gYxAJaMvIOGZ8ccmfKn0OlC7I6TszOemsyoqPjLYeGhoxPeHgYYgVZ39ws1z08DPnJe3v9gnGgu1t+x+TEfUItLfAiIKMqIYTB6Q/+Bxhr4fgnZ5yrK3gRUPyX8ZMst6Sq01N4EXhDLRrNMd8WpEqynDJU3MTejFcsFjiGOSKXp/7gAGKFfzybXV7uubtdiC2paXNTtUa1gcZZWfHWmvRXJjelJpr6qSmIBZTfvevN+aL0LtradjHdCem3tCTqwsaG8I2ZSuV8Cor29jQ2/I5NATWxIB5QgRK9ssPEhBDHx3qkJDc+riauOEgQvGc4yrXfoNrhkdIsJR1KkZXxnzYV7Wg6u1Gp3qwWHqF6qpI7CrS2jmCy2YEwEDnlAdqcOp4hRJZdXOQDyR053HwYgQYhPpho9ai3kitFhViEOMH5jLJaVUnRB4stiAd5dnZmgS6528IXwBt2o8PyBRQd8pK2a1APcPmqWe1wBPYNc71g+FzLCx7U6Hza1r75ZsIEQi8HCDW4Xh6tzoYJcdBBVOsDNllk8pLrmTqyqOha0CaLTO5KOoEizPUsDM2roDukrqCW64W4lm9MiICS69EFguqsH+paXuhPOzy5ntqF4s4H1aA4coWnYAUiWf7M7rGyStYKQ6Q1z+Ga39666z35OpFLYuD5+wjm1s2dQ55Mgp3VvPoMJN9sMga5gAxn8AGwREkifdpoTYzBx+Qr+Hr7ADdCeLvTh4j1CPC9KMD8/McuaJPnkBiLXQjBG1Tgl59YhaHsjb2nRV5WAIcdYXTL7F6bRPmUpqm3sP8+9jdVxIHkSoWSeH/TgEowhSICCYv4i7Du/wDkGVVLVXXYAwAAAABJRU5ErkJggg==" alt="Dot MD"
+            class="absolute top-[37%] right-[42%] md:right-[38%] animate-zoom h-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAoCAYAAADg+OpoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMwSURBVHgBrZcxT9tAFMffXRtaqRW4AiMYUFOJDaTSlSkwFZbyCRAsbKiqxE6QmAgSsNKBsIWtXWAkQ8NKKrFjBQYgSHUQQxXSvN6zjfH5bMeO+UuW7fOzf+/dvXt3ZhBDqGkaZDJZcTnx1IgGtFpVZppmnG+wSMDAQA4YWxUHAbQQs6qA7sDDQ1lAjUQg1HX68JYA5CC+DAFcY/V6MRZIQL4KQB7CI4gW4raIbs3fpRIIBwdXxSmvvDw5CTAzAzAyAjA+DnBxAdBoABwdAZyc2PeyqtBsTgWOn4DMiQOlY3oasVLBSNVqiIUCKu/q+pYK0bSseHguGS4vYyKRQ6OjfuCcP5pVyWB+HrsSwWTQ+SODO+cFl0rjsL4OXYnGcmnJ25J1o8L+fnlsSiVMJdOUu1DXj+2IOM8pXqVRX5+doY+yJ7vVdR/dxrExu+vSiqbAkzQcHn7PBTErefMc8jvbar3jkQbdyu8wokagp9l7dgbPIqoaXjFmEui323B5CXB3B6lFZcnLqderHNrtquTJc0RFNfBRiGU6cTFQRcmoUIBUKpX8RXbfAjkVdt9tprB3d6ErEWBz09tiwIsXZfcOh4aoVPyRKsThYaKCgI2GXe3lWpdXnKFGpdRvbMSD0FKhQs6933cXPmsD0tNzKi6zkgc0t1ZWAGZnAXp7Ze8qFYCDA/vwq92eYre3ZQVkwXR9QeT8HoSJSgvBaArUalFTochubhYhKCIP7DjhpkQV5x/Y1ZUhNSlGYicDaSS2Xn5IIMjp133oTpTO20EPeKA553nw1sC4on1dQDShIMd4B5LJCNs8hoIsNZvUBUmi+hb1MBRklSbEyJc9onT+EWUQucknxUr3gHRWTKAjqWO6FztBYoGcdA/rFkNEE2vedY7IsuI0VmpiMLYTJ5rYoJB0N9j19TbEVLyISP50T1uqokTV3VlrThO+Gpze399quZcAX4DWJnR+kJm9Tn1+lYFfzRbcI9KtmGviYCIpxHUb4Sf/B+XFv+q/rALae6OJNQlC16QexqBpQ8JUXbw3P3UEWbDXWhYyMCE8nOD23tz+n0Xf6utEYkVF+0NmQcpB3/wP7eauKKdOZj8AAAAASUVORK5CYII=" alt="Dot SM 1"
+            class="absolute top-[43%] right-[38%] md:right-[31%] animate-zoom h-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAoCAYAAADg+OpoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMwSURBVHgBrZcxT9tAFMffXRtaqRW4AiMYUFOJDaTSlSkwFZbyCRAsbKiqxE6QmAgSsNKBsIWtXWAkQ8NKKrFjBQYgSHUQQxXSvN6zjfH5bMeO+UuW7fOzf+/dvXt3ZhBDqGkaZDJZcTnx1IgGtFpVZppmnG+wSMDAQA4YWxUHAbQQs6qA7sDDQ1lAjUQg1HX68JYA5CC+DAFcY/V6MRZIQL4KQB7CI4gW4raIbs3fpRIIBwdXxSmvvDw5CTAzAzAyAjA+DnBxAdBoABwdAZyc2PeyqtBsTgWOn4DMiQOlY3oasVLBSNVqiIUCKu/q+pYK0bSseHguGS4vYyKRQ6OjfuCcP5pVyWB+HrsSwWTQ+SODO+cFl0rjsL4OXYnGcmnJ25J1o8L+fnlsSiVMJdOUu1DXj+2IOM8pXqVRX5+doY+yJ7vVdR/dxrExu+vSiqbAkzQcHn7PBTErefMc8jvbar3jkQbdyu8wokagp9l7dgbPIqoaXjFmEui323B5CXB3B6lFZcnLqderHNrtquTJc0RFNfBRiGU6cTFQRcmoUIBUKpX8RXbfAjkVdt9tprB3d6ErEWBz09tiwIsXZfcOh4aoVPyRKsThYaKCgI2GXe3lWpdXnKFGpdRvbMSD0FKhQs6933cXPmsD0tNzKi6zkgc0t1ZWAGZnAXp7Ze8qFYCDA/vwq92eYre3ZQVkwXR9QeT8HoSJSgvBaArUalFTochubhYhKCIP7DjhpkQV5x/Y1ZUhNSlGYicDaSS2Xn5IIMjp133oTpTO20EPeKA553nw1sC4on1dQDShIMd4B5LJCNs8hoIsNZvUBUmi+hb1MBRklSbEyJc9onT+EWUQucknxUr3gHRWTKAjqWO6FztBYoGcdA/rFkNEE2vedY7IsuI0VmpiMLYTJ5rYoJB0N9j19TbEVLyISP50T1uqokTV3VlrThO+Gpze399quZcAX4DWJnR+kJm9Tn1+lYFfzRbcI9KtmGviYCIpxHUb4Sf/B+XFv+q/rALae6OJNQlC16QexqBpQ8JUXbw3P3UEWbDXWhYyMCE8nOD23tz+n0Xf6utEYkVF+0NmQcpB3/wP7eauKKdOZj8AAAAASUVORK5CYII=" alt="Dot SM 2"
+            class="absolute top-[45%] right-[34%] md:right-[22%] animate-zoomh-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAoCAYAAADg+OpoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMwSURBVHgBrZcxT9tAFMffXRtaqRW4AiMYUFOJDaTSlSkwFZbyCRAsbKiqxE6QmAgSsNKBsIWtXWAkQ8NKKrFjBQYgSHUQQxXSvN6zjfH5bMeO+UuW7fOzf+/dvXt3ZhBDqGkaZDJZcTnx1IgGtFpVZppmnG+wSMDAQA4YWxUHAbQQs6qA7sDDQ1lAjUQg1HX68JYA5CC+DAFcY/V6MRZIQL4KQB7CI4gW4raIbs3fpRIIBwdXxSmvvDw5CTAzAzAyAjA+DnBxAdBoABwdAZyc2PeyqtBsTgWOn4DMiQOlY3oasVLBSNVqiIUCKu/q+pYK0bSseHguGS4vYyKRQ6OjfuCcP5pVyWB+HrsSwWTQ+SODO+cFl0rjsL4OXYnGcmnJ25J1o8L+fnlsSiVMJdOUu1DXj+2IOM8pXqVRX5+doY+yJ7vVdR/dxrExu+vSiqbAkzQcHn7PBTErefMc8jvbar3jkQbdyu8wokagp9l7dgbPIqoaXjFmEui323B5CXB3B6lFZcnLqderHNrtquTJc0RFNfBRiGU6cTFQRcmoUIBUKpX8RXbfAjkVdt9tprB3d6ErEWBz09tiwIsXZfcOh4aoVPyRKsThYaKCgI2GXe3lWpdXnKFGpdRvbMSD0FKhQs6933cXPmsD0tNzKi6zkgc0t1ZWAGZnAXp7Ze8qFYCDA/vwq92eYre3ZQVkwXR9QeT8HoSJSgvBaArUalFTochubhYhKCIP7DjhpkQV5x/Y1ZUhNSlGYicDaSS2Xn5IIMjp133oTpTO20EPeKA553nw1sC4on1dQDShIMd4B5LJCNs8hoIsNZvUBUmi+hb1MBRklSbEyJc9onT+EWUQucknxUr3gHRWTKAjqWO6FztBYoGcdA/rFkNEE2vedY7IsuI0VmpiMLYTJ5rYoJB0N9j19TbEVLyISP50T1uqokTV3VlrThO+Gpze399quZcAX4DWJnR+kJm9Tn1+lYFfzRbcI9KtmGviYCIpxHUb4Sf/B+XFv+q/rALae6OJNQlC16QexqBpQ8JUXbw3P3UEWbDXWhYyMCE8nOD23tz+n0Xf6utEYkVF+0NmQcpB3/wP7eauKKdOZj8AAAAASUVORK5CYII=" alt="Dot SM 3"
+            class="absolute top-[59%] right-[32%] md:right-[14%] animate-zoom h-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAoCAYAAADg+OpoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMwSURBVHgBrZcxT9tAFMffXRtaqRW4AiMYUFOJDaTSlSkwFZbyCRAsbKiqxE6QmAgSsNKBsIWtXWAkQ8NKKrFjBQYgSHUQQxXSvN6zjfH5bMeO+UuW7fOzf+/dvXt3ZhBDqGkaZDJZcTnx1IgGtFpVZppmnG+wSMDAQA4YWxUHAbQQs6qA7sDDQ1lAjUQg1HX68JYA5CC+DAFcY/V6MRZIQL4KQB7CI4gW4raIbs3fpRIIBwdXxSmvvDw5CTAzAzAyAjA+DnBxAdBoABwdAZyc2PeyqtBsTgWOn4DMiQOlY3oasVLBSNVqiIUCKu/q+pYK0bSseHguGS4vYyKRQ6OjfuCcP5pVyWB+HrsSwWTQ+SODO+cFl0rjsL4OXYnGcmnJ25J1o8L+fnlsSiVMJdOUu1DXj+2IOM8pXqVRX5+doY+yJ7vVdR/dxrExu+vSiqbAkzQcHn7PBTErefMc8jvbar3jkQbdyu8wokagp9l7dgbPIqoaXjFmEui323B5CXB3B6lFZcnLqderHNrtquTJc0RFNfBRiGU6cTFQRcmoUIBUKpX8RXbfAjkVdt9tprB3d6ErEWBz09tiwIsXZfcOh4aoVPyRKsThYaKCgI2GXe3lWpdXnKFGpdRvbMSD0FKhQs6933cXPmsD0tNzKi6zkgc0t1ZWAGZnAXp7Ze8qFYCDA/vwq92eYre3ZQVkwXR9QeT8HoSJSgvBaArUalFTochubhYhKCIP7DjhpkQV5x/Y1ZUhNSlGYicDaSS2Xn5IIMjp133oTpTO20EPeKA553nw1sC4on1dQDShIMd4B5LJCNs8hoIsNZvUBUmi+hb1MBRklSbEyJc9onT+EWUQucknxUr3gHRWTKAjqWO6FztBYoGcdA/rFkNEE2vedY7IsuI0VmpiMLYTJ5rYoJB0N9j19TbEVLyISP50T1uqokTV3VlrThO+Gpze399quZcAX4DWJnR+kJm9Tn1+lYFfzRbcI9KtmGviYCIpxHUb4Sf/B+XFv+q/rALae6OJNQlC16QexqBpQ8JUXbw3P3UEWbDXWhYyMCE8nOD23tz+n0Xf6utEYkVF+0NmQcpB3/wP7eauKKdOZj8AAAAASUVORK5CYII=" alt="Dot SM 4"
+            class="absolute bottom-[21%] right-[30%] md:right-[15%] animate-zoom h-auto md:scale-100 scale-75" />
+          <img src="data:image/png;base64,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" alt="Dot LG"
+            class="absolute bottom-[14%] right-[37%] animate-zoom h-auto md:scale-100 scale-75" />
+        </div>
+
+      </div>
+      <div class="block sm:hidden relative w-full aspect-[1]">
+        <img src="./assets/home-sale-map-mobile-2-BchzZwu1.png" alt="VN Map 2"
+          class="absolute inset-0 w-full h-full object-contain" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Video file -->
+  <section id="videoSection" class="relative w-screen aspect-[4/3] md:aspect-video overflow-hidden cursor-pointer">
+
+    <!-- Background Video -->
+    <video id="heroVideo" muted loop playsinline class="absolute inset-0 w-full h-full object-cover">
+      <source src="./assets/TOP%206%20Wonton%20Dumplings%20in%20Vietnam%20that%20you%20Must%20Try%20Once%20-%20%E8%B6%8A%E5%8D%97%E9%9B%B2%E5%90%9E%E6%B0%B4%E9%A4%83%E9%BA%B5-mJ_nzMAK.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <!-- Top Wave SVG -->
+    <img src="data:image/svg+xml,%3csvg%20id='visual'%20viewBox='0%200%20900%20600'%20width='900'%20height='600'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20version='1.1'%3e%3cpath%20d='M0%2028L21.5%2034.7C43%2041.3%2086%2054.7%20128.8%2057.3C171.7%2060%20214.3%2052%20257.2%2054.8C300%2057.7%20343%2071.3%20385.8%2067.2C428.7%2063%20471.3%2041%20514.2%2036.3C557%2031.7%20600%2044.3%20642.8%2053.8C685.7%2063.3%20728.3%2069.7%20771.2%2065.5C814%2061.3%20857%2046.7%20878.5%2039.3L900%2032L900%200L878.5%200C857%200%20814%200%20771.2%200C728.3%200%20685.7%200%20642.8%200C600%200%20557%200%20514.2%200C471.3%200%20428.7%200%20385.8%200C343%200%20300%200%20257.2%200C214.3%200%20171.7%200%20128.8%200C86%200%2043%200%2021.5%200L0%200Z'%20fill='%23FFEECF'%20stroke-linecap='round'%20stroke-linejoin='miter'%3e%3c/path%3e%3c/svg%3e" alt="Top Wave"
+      class="absolute top-0 left-0 w-full h-auto pointer-events-none select-none z-1" />
+
+    <!-- Bottom Wave SVG -->
+    <img src="data:image/svg+xml,%3csvg%20id='visual'%20viewBox='0%200%20900%20600'%20width='900'%20height='600'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20version='1.1'%3e%3cpath%20d='M0%20557L21.5%20555.2C43%20553.3%2086%20549.7%20128.8%20545.7C171.7%20541.7%20214.3%20537.3%20257.2%20540.3C300%20543.3%20343%20553.7%20385.8%20559.7C428.7%20565.7%20471.3%20567.3%20514.2%20556.8C557%20546.3%20600%20523.7%20642.8%20516.3C685.7%20509%20728.3%20517%20771.2%20517.3C814%20517.7%20857%20510.3%20878.5%20506.7L900%20503L900%20601L878.5%20601C857%20601%20814%20601%20771.2%20601C728.3%20601%20685.7%20601%20642.8%20601C600%20601%20557%20601%20514.2%20601C471.3%20601%20428.7%20601%20385.8%20601C343%20601%20300%20601%20257.2%20601C214.3%20601%20171.7%20601%20128.8%20601C86%20601%2043%20601%2021.5%20601L0%20601Z'%20fill='%23FFFFFF'%20stroke-linecap='round'%20stroke-linejoin='miter'%3e%3c/path%3e%3c/svg%3e" alt="Bottom Wave"
+      class="absolute -bottom-1 left-0 w-full h-auto pointer-events-none select-none z-1" />
+
+    <!-- Center Play Button -->
+    <div id="playButtonWrapper"
+      class="absolute inset-0 flex items-center justify-center bg-black/20 transition-opacity duration-300">
+
+      <!-- Pulse Ring -->
+      <span class="pulse-ring"></span>
+      <button id="playButton"
+        class="w-[77px] h-[77px] rounded-full bg-white border-4 border-white flex items-center justify-center hover:scale-105 transition-transform duration-300"
+        aria-label="Play">
+        <!-- Play Icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" class="w-6 h-6 ml-1">
+          <path d="M5 3v18l15-9L5 3z" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- New (Tin Tức) -->
+  <section class="py-12 px-8 overflow-hidden">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
+
+
+      <!-- Left side: Text -->
+      <div class="flex-1 text-left">
+        <h2 class="text-black font-bold text-base sm:text-lg md:text-xl fade-left">Tin Tức</h2>
+        <h1 class="text-[#E7292B] font-bold text-2xl sm:text-3xl md:text-4xl mt-1 fade-left delay-200 uppercase">Đọc gì
+          hôm nay
+        </h1>
+        <p class="text-[#262626] mt-3 text-sm sm:text-base md:text-lg fade-left delay-4s">
+          Chúng tôi tin rằng, chỉ khi làm bằng cả cái tâm, chiếc bánh mới thật sự chất lượng
+        </p>
+      </div>
+
+      <!-- Right side: Button -->
+      <div class="flex-1 flex justify-center md:justify-end items-center">
+        <a href="#"
+          class="inline-flex items-center gap-2 px-6 sm:px-8 md:px-10 py-2 sm:py-3 fade-right delay-200 bg-[#E7292B] text-white text-sm sm:text-base md:text-lg font-semibold uppercase border border-white rounded-full hover:bg-[#c92021] transition duration-300">
+          Xem thêm
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- News Swiper -->
+    <div
+      class="home-news-swiper swiper mt-16 w-full h-[420px] sm:h-[480px] md:h-[560px] relative overflow-visible fade-up delay-6s">
+      <div class="swiper-wrapper">
+
+        <!-- Slider 1 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/home-news-slider-1-BDUc4OYz.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] w-10 h-10 sm:w-12 sm:h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-[10px] sm:text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <!-- Content: 20% height -->
+          <div
+            class="h-[15%] px-4 bg-[#27A116] text-white text-sm sm:text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+        <!-- Slider 2 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/home-news-slider-2-BoBMqHHT.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] z-1 w-12 h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <div class="h-[15%] px-4 bg-[#DC3A2E] text-white text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+        <!-- Slider 3 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/cooperate-news-3-DZ3vULsN.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] z-1 w-12 h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <!-- Content: 20% height -->
+          <div class="h-[15%] px-4 bg-[#FECC3B] text-white text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+        <!-- Slider 4 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/cooperate-news-2-CI2fkV5h.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] z-1 w-12 h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <!-- Content: 20% height -->
+          <div class="h-[15%] px-4 bg-[#27A116] text-white text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+        <!-- Slider 5 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/cooperate-news-1-DFzE54xv.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] z-1 w-12 h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <div class="h-[15%] px-4 bg-[#DC3A2E] text-white text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+        <!-- Slider 6 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/home-news-slider-6-CarDsJdg.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] z-1 w-12 h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <!-- Content: 20% height -->
+          <div class="h-[15%] px-4 bg-[#27A116] text-white text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+        <!-- Slider 7 -->
+        <a href="news-detail" class="swiper-slide rounded-lg shadow-md relative overflow-hidden max-w-[90vw] mx-auto">
+          <!-- Image: 80% height -->
+          <div class="h-[85%] overflow-hidden">
+            <img src="./assets/home-news-slider-7-l4WvsGdk.png" alt="News" class="w-full h-full object-cover">
+          </div>
+
+          <!-- Floating Date Box -->
+          <div
+            class="absolute right-[-5%] -translate-x-1/2 bottom-[12%] z-1 w-12 h-12 bg-[#FDAD24] rounded-md flex flex-col items-center justify-center text-xs font-bold shadow-md">
+            <span class="text-white">10.02</span>
+            <span class="text-white">2025</span>
+          </div>
+
+          <!-- Content: 20% height -->
+          <div class="h-[15%] px-4 bg-[#FECC3B] text-white text-base flex items-center justify-center text-start">
+            <p>Azierta được tích hợp hoàn toàn vào QbD Group</p>
+          </div>
+        </a>
+
+
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+  </section>
+
+  <!-- Consultation - Quotation (Tư vấn và báo giá) -->
+  <section class="py-16 px-4 relative overflow-hidden bg-white">
+    <!-- Background Hills -->
+    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%201726.192468619247%20220.576'%20style='max-height:%20500px'%20width='1726.192468619247'%20height='220.576'%3e%3cellipse%20fill='url(%23paint0_radial_4064_2483)'%20ry='452'%20rx='1431.5'%20cy='452'%20cx='863.5'/%3e%3cdefs%3e%3cradialGradient%20gradientTransform='translate(864%20268)%20rotate(7.32697)%20scale(1442.78%20455.562)'%20gradientUnits='userSpaceOnUse'%20r='1'%20cy='0'%20cx='0'%20id='paint0_radial_4064_2483'%3e%3cstop%20stop-color='%237A0202'/%3e%3cstop%20stop-color='%237A0202'%20offset='1'/%3e%3c/radialGradient%3e%3c/defs%3e%3c/svg%3e" alt="Decor Hill Background"
+      class="absolute bottom-0 left-0 w-full h-auto pointer-events-none z-1 hidden md:block" />
+    <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%201726.054054054054%20295.792'%20style='max-height:%20500px'%20width='1726.054054054054'%20height='295.792'%3e%3cellipse%20fill='%23AC0707'%20ry='486.5'%20rx='1540.5'%20cy='486.5'%20cx='863.5'/%3e%3c/svg%3e" alt="Decor Hill Background"
+      class="absolute bottom-0 left-0 w-full h-auto pointer-events-none z-0 hidden md:block" />
+
+    <!-- Layout Container -->
+    <div class="relative z-20 max-w-7xl mx-auto grid grid-rows-[auto_1fr_auto]">
+
+      <!-- 🔝 Title (Row 1) -->
+      <div class="text-center fade-up space-y-4 max-w-3xl mx-auto">
+        <h1 class="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 uppercase fade-up delay-200">
+          <span class="text-[#E7292B]">Bạn đã</span> sẵn sàng trao đổi với
+          <span class="text-[#E7292B]">Minh Hảo chưa?</span>
+        </h1>
+        <p class="text-sm sm:text-base md:text-lg text-black fade-up delay-4s">
+          Hãy lên lịch tư vấn MIỄN PHÍ bằng cách gọi:
+          <strong>(028) 3957 1457 – (028) 3853 3905</strong> hoặc dùng biểu mẫu dưới để yêu cầu báo giá nhanh.
+        </p>
+      </div>
+
+      <div class="hidden md:block">
+        <div class="absolute left-[-20%] top-0">
+          <img src="./assets/home-quote-left-rice-Ca1Exp4R.png" alt="Decor Left" class=" h-auto object-contain" />
+        </div>
+      </div>
+
+      <!-- 🧩 Grid Row with Images + Form (Row 2) -->
+      <div class="relative md:grid md:grid-cols-[1fr_2fr_1fr] items-end  gap-8">
+        <!-- Left Image Group (hidden on small screens) -->
+        <div class="hidden md:block relative h-auto">
+          <div class="absolute left-0 bottom-0">
+            <img src="./assets/home-quote-left-animation-D4JDDjEl.png" alt="Decor Left"
+              class="w-[80%] h-auto object-contain swing-animation" />
+          </div>
+        </div>
+
+
+        <!-- 📝 Form Box (Center) -->
+
+        <div
+          class="col-span-3 md:col-span-1 mx-auto w-full sm:w-[90%] md:w-full bg-white shadow-lg rounded-lg p-6 sm:p-6 md:p-8 space-y-6 fade-up delay-6s max-w-[700px]">
+          <h2 class="text-xl sm:text-2xl md:text-3xl font-bold text-center text-[#E7292B]">
+            TƯ VẤN - BÁO GIÁ
+          </h2>
+
+          <!-- Wrapper to control input width on large screens -->
+          <div class="space-y-4 lg:w-[90%] lg:max-w-[600px] mx-auto">
+            <input type="text"
+              class="text-sm sm:text-base w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#E7292B] focus:border-[#E7292B]"
+              placeholder="Nhập họ và tên" />
+            <input type="email"
+              class="text-sm sm:text-base w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#E7292B] focus:border-[#E7292B]"
+              placeholder="Email của bạn" />
+            <input type="tel"
+              class="text-sm sm:text-base w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#E7292B] focus:border-[#E7292B]"
+              placeholder="Số điện thoại" />
+            <textarea
+              class="text-sm sm:text-base w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#E7292B] focus:border-[#E7292B]"
+              rows="4" placeholder="Bạn cần tư vấn về điều gì?"></textarea>
+          </div>
+
+          <div class="text-center pt-2">
+            <a href="#" class="w-full sm:w-auto inline-flex items-center justify-center gap-2
+              px-4 py-2
+              bg-[#E7292B] text-white
+              text-sm sm:text-base md:text-lg
+              font-semibold uppercase
+              rounded-full hover:bg-[#c92021]
+              transition duration-200 ease-in-out
+              max-w-full sm:max-w-[300px] md:max-w-[350px] mx-auto block">
+              Yêu cầu tư vấn miễn phí
+            </a>
+          </div>
+
+        </div>
+
+
+        <!-- Right Image Group -->
+
+        <div class="hidden md:block relative h-auto">
+          <div class="absolute right-0 bottom-0">
+            <img src="./assets/home-quote-right-store-xgLktof-.png" alt="Decor Right"
+              class="w-full h-full object-contain" />
+          </div>
+          <div class="absolute right-30 -bottom-10 lg:-bottom-20">
+            <img src="./assets/home-quote-right-dumpling-BkHarSb0.png" alt="Decor Right"
+              class="w-full h-full object-contain scale-75 z-1" />
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative py-4 sm:py-12 px-6 text-black custom-footer">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-32">
+      <!-- Left Section -->
+      <div class="w-full flex flex-col items-start gap-6">
+        <img src="./assets/footer-Nbj7l8H6.png" alt="Big image"
+          class="w-full max-w-[200px] md:max-w-[260px] lg:max-w-[286px] h-auto object-contain rounded-md" />
+        <ul class="flex flex-wrap justify-start gap-1 sm:gap-2 md:gap-4 text-white text-lg">
+          <li><a href="#"
+              class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"
+              class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                class="fab fa-youtube"></i></a></li>
+          <li><a href="#"
+              class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                class="fab fa-instagram"></i></a></li>
+          <li><a href="#"
+              class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                class="fab fa-twitter"></i></a></li>
+          <li><a href="#"
+              class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><img
+                src="./assets/zalo-icon-DLaycxUz.svg" alt="Zalo Icon"></a></li>
+        </ul>
+      </div>
+
+      <!-- Middle Section: Công Ty & Dịch Vụ -->
+      <div class="w-full">
+        <div class="mb-8">
+          <h1 class="text-[#E7292B] text-lg font-bold mb-4 uppercase">Công Ty</h1>
+          <ul class="space-y-2 font-medium">
+            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="about-us"
+                class="hover:underline">Về Minh Hảo</a></li>
+            <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="store"
+                class="hover:underline">Cửa hàng trực thuộc</a></li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="text-[#E7292B] text-lg font-bold mb-4 uppercase">Dịch Vụ</h1>
+          <ul class="space-y-2 font-medium">
+            <li class="flex items-center gap-1"><i class="fa-solid fa-angle-right"></i><a href="dumpling"
+                class="hover:underline">Sản Phẩm</a></li>
+            <li class="flex items-center gap-1"><i class="fa-solid fa-angle-right"></i><a href="cooperate"
+                class="hover:underline">Hợp Tác</a></li>
+            <li class="flex items-center gap-1"><i class="fa-solid fa-angle-right"></i><a href="#"
+                class="hover:underline">Hướng dẫn lấy bánh sỉ</a></li>
+            <li class="flex items-center gap-1"><i class="fa-solid fa-angle-right"></i><a href="contact"
+                class="hover:underline">Liên hệ</a></li>
+          </ul>
+        </div>
+        <div class="flex items-center gap-2 transition-colors mt-4">
+          <i class="fa-solid fa-location-dot text-[#E7292B]"></i>
+          <a href="#" class="text-[#E7292B] font-medium hover:underline">Xem bản đồ</a>
+        </div>
+      </div>
+
+      <!-- Right Section: Contact + Form -->
+      <div class="w-full md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-auto">
+        <div>
+          <h1 class="text-[#E7292B] text-lg font-bold mb-2 uppercase">Thông tin liên hệ</h1>
+          <ul class="space-y-3">
+            <li class="flex gap-2 items-start">
+              <i class="fa-solid fa-location-dot mt-1"></i>
+              <div>
+                <p>Head Office:</p>
+                <p class="font-semibold">156 Nguyễn Kim, Phường 6, Quận 10, TP HCM</p>
+              </div>
+            </li>
+            <li class="flex gap-2 items-start">
+              <i class="fa-solid fa-phone-volume mt-1"></i>
+              <div>
+                <p>HOTLINE:</p>
+                <p class="font-semibold">(028) 3957 1457 – (028) 3853 390</p>
+              </div>
+            </li>
+            <li class="flex gap-2 items-start">
+              <i class="fa-solid fa-envelope-open-text mt-1"></i>
+              <div>
+                <p>Email:</p>
+                <p class="font-semibold break-all">banhbaominhhao156@gmail.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Subscribe Form -->
+        <div class="mt-8">
+          <h1 class="text-[#E7292B] text-lg font-bold uppercase mb-2">Đăng Ký nhận Khuyến mãi</h1>
+          <p class="text-[#1C1C1C] font-medium mb-4">
+            Kết nối với Minh Hảo, nhận ngay tin khuyến mãi mới nhất và ý tưởng thực đơn "mix" hấp dẫn mỗi ngày!
+          </p>
+          <form class="relative w-full max-w-full">
+            <div class="relative">
+              <input type="text" placeholder="Họ và tên"
+                class="w-full rounded-full bg-white border border-gray-300 px-4 py-4 pr-32 text-sm focus:outline-none focus:ring-2 focus:ring-[#E7292B]" />
+              <button type="submit"
+                class="absolute right-1 top-1 bottom-1 px-4 rounded-full bg-[#E7292B] text-white font-semibold text-sm hover:bg-red-700 transition flex items-center gap-2 cursor-pointer">
+                Gửi ngay <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Copyright Bottom Line -->
+    <div
+      class="mt-4 pt-4 pb-6 text-sm text-black max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <p class="text-center sm:text-left">
+        Copyright 2025 <strong>MINH HẢO</strong>. Powered by <a href="#"
+          class="font-semibold text-[#E7292B] hover:underline">HD Agency</a>
+      </p>
+      <p class="text-center sm:text-right">
+        <a href="#" class="hover:underline">Điều khoản sử dụng</a> | <a href="#" class="hover:underline">Chính sách bảo
+          mật</a>
+      </p>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

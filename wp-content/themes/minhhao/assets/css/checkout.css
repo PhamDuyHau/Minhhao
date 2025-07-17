@@ -1,0 +1,163 @@
+/* === Base === */
+body {
+  background-color: #FFEECF;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Layout Wrapper === */
+.wc-block-components-sidebar-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+/* === Main Content (Left Column) === */
+.wc-block-checkout__main {
+  flex: 1 1 0%;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  min-width: 0;
+}
+
+/* === Sidebar (Right Column) === */
+.wc-block-checkout__sidebar {
+  width: 320px;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+  margin-top: 0 !important;
+}
+
+/* === Form Fields === */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background-color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* === Section Headings === */
+.wc-block-checkout__main h2,
+.wc-block-checkout__sidebar h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+/* === Place Order Button === */
+.wc-block-checkout__submit-button,
+button.wc-block-components-button {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #dc2626, #f87171);
+  color: #fff;
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s ease;
+}
+
+.wc-block-checkout__submit-button:hover,
+button.wc-block-components-button:hover {
+  background: #b91c1c;
+  transform: scale(1.03);
+}
+
+.wc-block-checkout__submit-button:focus {
+  outline: 2px solid #B40303;
+  outline-offset: 2px;
+}
+
+/* === Responsive (Tablet & Down) === */
+@media (max-width: 1024px) {
+
+  .wc-block-checkout__sidebar {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+
+/* === Tiny spacing fixes for very small screens === */
+@media (max-width: 480px) {
+  .wc-block-checkout__main,
+  .wc-block-checkout__sidebar {
+    padding: 1.5rem;
+  }
+
+  input,
+  textarea,
+  select {
+    font-size: 0.95rem;
+  }
+}
+
+.wc-block-cart__main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.wc-block-cart {
+  width: 100%;
+  max-width: 720px;
+}
+
+
+/* Reset and isolate all payment methods */
+.wc-block-components-radio-control-accordion-option {
+  position: relative;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  background: #fff;
+  transition: border 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+
+
+/* Hover border */
+.wc-block-components-radio-control-accordion-option:hover {
+  border-color: #cbd5e1;
+}
+
+/* Reset internal label styles */
+.wc-block-components-radio-control__option {
+  border: none !important;
+  background: transparent;
+}
+
+/* Input styling fix */
+.wc-block-components-radio-control__input {
+  margin: 0;
+  accent-color: #111827;
+}
+
+/* Remove subtle Woo line */
+.wc-block-components-radio-control--highlight-checked 
+.wc-block-components-radio-control-accordion-option:after {
+  display: none !important;
+}

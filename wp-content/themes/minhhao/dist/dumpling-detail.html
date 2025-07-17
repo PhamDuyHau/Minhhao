@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load your styles (Tailwind, swiper.css, fontawesome, etc.) -->
+
+
+    <!-- Load your JS entry point -->
+
+    <title>Bánh bao </title>
+  <script type="module" crossorigin src="./assets/main-B2Ccc0Nk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-DiNN7t2y.css">
+</head>
+
+<body class="bg-[#F3F3F3]">
+    <!-- Header -->
+    <header class="bg-white relative">
+        <div class="max-w-screen mx-auto flex items-center justify-between h-20 lg:h-28 px-6 lg:px-12 relative">
+
+            <!-- Left links -->
+            <ul class="flex-1 hidden lg:flex space-x-8 uppercase">
+                <li><a href="/"
+                        class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Trang
+                        chủ</a>
+                </li>
+                <!-- Dropdown Button Wrapper -->
+                <li class="relative group">
+                    <button id="dropdownButton1" type="button" aria-controls="dropdown1"
+                        class="flex items-center uppercase text-black font-semibold group-hover:text-[#E7292B] transition duration-300 focus:outline-none">
+                        <span
+                            class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                            Giới Thiệu
+                        </span>
+                        <i id="icon1"
+                            class="fas fa-chevron-right ml-2 transform transition-transform duration-300 group-hover:rotate-90"></i>
+                    </button>
+
+
+                    <!-- Dropdown: hover + click show -->
+                    <div id="dropdown1"
+                        class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white shadow rounded transition-all duration-300">
+                        <a href="about-us"
+                            class="block px-4 py-3 text-black  hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+                            Về Minh Hảo
+                        </a>
+                        <a href="store"
+                            class="block px-4 py-3 hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+                            Cửa hàng trực thuộc
+                        </a>
+                    </div>
+                </li>
+
+
+                <li><a href="cooperate"
+                        class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Hợp
+                        tác</a>
+                </li>
+            </ul>
+
+            <!-- CENTER LOGO -->
+            <a href="/" class="hidden lg:block flex-shrink-0 z-10 items-center">
+                <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-28 w-auto" />
+            </a>
+
+            <!-- RIGHT LINKS -->
+            <div class="flex-1 hidden lg:flex justify-end items-center space-x-3">
+                <!-- Right nav -->
+                <ul class="hidden xl:flex space-x-4">
+                    <li class="relative group">
+                        <button id="dropdownButton2" type="button" aria-expanded="false" aria-controls="dropdown2"
+                            class="flex items-center uppercase text-black font-semibold hover:text-[#E7292B] underline-offset-2 decoration-[#E7292B] focus:outline-none">
+                            <span
+                                class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                                Sản phẩm
+                            </span>
+                            <i id="icon2"
+                                class="fas fa-chevron-right ml-2 text-black font-semibold transform transition-transform duration-300 group-hover:rotate-90"></i>
+                        </button>
+
+                        <!-- Dropdown content -->
+                        <div id="dropdown2"
+                            class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white rounded shadow">
+                            <a href="dumpling"
+                                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                                Bánh Bao
+                            </a>
+                            <a href="#"
+                                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                                Bánh Ngọt
+                            </a>
+                            <a href="#"
+                                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                                Bánh Giò - Xôi
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li><a href="news"
+                            class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Tin
+                            Tức</a>
+                    </li>
+
+                    <li><a href="contact"
+                            class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Liên
+                            Hệ</a>
+                    </li>
+                </ul>
+                <!-- Search + Phone -->
+                <button
+                    class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition mx-6 cursor-pointer">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-phone-volume text-3xl text-[#E7292B]"></i>
+                    <div class="flex flex-col leading-tight">
+                        <span class="text-black font-semibold text-sm">Tư vấn khách hàng</span>
+                        <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Topbar -->
+            <div class="relative w-full h-28 px-4 lg:hidden flex items-center justify-between">
+
+                <!-- LEFT: Hamburger -->
+                <button id="menuToggle" class="z-10 w-8 h-8 flex flex-col justify-between items-center p-1">
+                    <i class="fa-solid fa-bars text-[#E7292B]"></i>
+                </button>
+
+                <!-- CENTER: Logo -->
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+                    <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-20 lg:h-24 w-auto" />
+                </div>
+
+                <!-- RIGHT: Search + Phone -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <!-- Search -->
+                    <button
+                        class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition cursor-pointer">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+
+                    <!-- Phone (make text tighter on small screens) -->
+                    <div class="flex items-center space-x-1">
+                        <i class="fa-solid fa-phone-volume text-xl text-[#E7292B]"></i>
+                        <div class="flex flex-col leading-none text-right text-xs">
+                            <span class="text-black font-semibold">Tư vấn khách hàng</span>
+                            <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Black overlay animation layer -->
+            <div id="overlaySlide"
+                class="fixed top-0 left-0 w-0 h-full bg-black opacity-70 z-30 transition-all duration-500 ease-in-out pointer-events-none touch-none">
+            </div>
+
+            <!-- Mobile Menu Sidebar -->
+            <div id="mobileMenu"
+                class="lg:hidden fixed top-0 left-0 h-full w-64 shadow-lg transform -translate-x-full transition-transform duration-300 z-40 flex flex-col overflow-y-auto"
+                style="background: radial-gradient(50% 50% at 50% 50%, #B40303 0%, #7A0202 100%);">
+
+                <!-- ✖ Close button -->
+                <div class="flex justify-end p-4">
+                    <button id="mobileMenuClose" aria-label="Close Menu"
+                        class="text-3xl text-[#D6A528] hover:text-[#E7292B] transition duration-300 focus:outline-none">
+                        &times;
+                    </button>
+                </div>
+
+                <!-- 🔍 Search -->
+                <form action="/search" method="GET" class="px-6 mb-4">
+                    <div class="flex items-center bg-white rounded-lg overflow-hidden w-full">
+                        <input name="q" type="text" placeholder="Tìm kiếm..." autocomplete="off"
+                            class="flex-grow px-3 py-2 text-sm text-[#7A0202] focus:outline-none min-w-0">
+                        <button type="submit"
+                            class="flex-shrink-0 px-4 py-2 bg-[#E7292B] text-white hover:bg-[#b40303]">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Navigation List -->
+                <ul class="flex flex-col space-y-5 px-6 pb-8 uppercase font-semibold text-white flex-1">
+
+                    <li><a href="/" class="hover:text-[#E7292B] transition-colors">Trang chủ</a></li>
+
+                    <!-- Giới Thiệu -->
+                    <li>
+                        <button id="mobileDropdownButton1" aria-expanded="false" aria-controls="mobileDropdown1"
+                            class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+                            Giới Thiệu
+                            <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <ul id="mobileDropdown1"
+                            class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-2 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+                            <li><a href="about-us" class="hover:text-[#E7292B] transition-colors">Về Minh Hảo</a></li>
+                            <li><a href="store" class="hover:text-[#E7292B] transition-colors">Cửa hàng trực thuộc</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="cooperate" class="hover:text-[#E7292B] transition-colors">Hợp tác</a></li>
+
+                    <!-- Sản phẩm -->
+                    <li>
+                        <button id="mobileDropdownButton2" aria-expanded="false" aria-controls="mobileDropdown2"
+                            class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+                            Sản phẩm
+                            <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <ul id="mobileDropdown2"
+                            class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-3 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+                            <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Bao</a></li>
+                            <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Ngọt</a></li>
+                            <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Giò - Xôi</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="news" class="hover:text-[#E7292B] transition-colors">Tin tức</a></li>
+                    <li><a href="contact" class="hover:text-[#E7292B] transition-colors">Liên hệ</a></li>
+                </ul>
+
+                <!-- ☎ Phone block -->
+                <div class="px-6 py-4 border-t border-[#FFCD27]/30">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone-volume text-2xl text-[#FFCD27]"></i>
+                        <div class="leading-tight">
+                            <span class="block text-xs text-white">Tư vấn khách hàng</span>
+                            <span class="block font-semibold text-[#FFCD27]">(028) 3957 1457</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative water image -->
+        <div id="waterImage"
+            class="absolute w-48 lg:w-96 h-auto top-[calc(100%-0.1rem)] left-1/2 -translate-x-1/2 z-10 transition-transform duration-500 ease-[cubic-bezier(0.68,0.95,0.41,1.31)]">
+            <img src="data:image/svg+xml,%3csvg%20width='240'%20height='28'%20viewBox='0%200%20240%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%200C72%200%2071.5%2027.5%20119.5%2027.5C167.5%2027.5%20168%200%20240%200H0Z'%20fill='%23FFFEFD'/%3e%3c/svg%3e" alt="Decorative Water"
+                class="w-full h-full object-contain block" />
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative flex items-center justify-between h-[100vh] overflow-hidden"
+        style="background: var(--main-bg);">
+        <!-- Left Image -->
+        <div class="max-w-[50%] w-full hidden md:block">
+            <img src="./assets/dumpling-detail-hero-left-Dr4xwRYQ.png" alt="Left Dumpling"
+                class="w-[50%] h-auto object-contain mt-10" />
+        </div>
+
+        <!-- Right Image -->
+        <div class="max-w-[50%] w-full hidden md:block">
+            <img src="./assets/dumpling-detail-hero-right-BnBTCsfP.png" alt="Right Dumpling"
+                class="w-[30%] h-auto object-contain float-right" />
+        </div>
+
+        <!-- Background wave at the bottom -->
+        <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20fill='none'%20viewBox='0%200%201727%20144.552'%20style='max-height:%20500px'%20width='1727'%20height='144.552'%3e%3cpath%20fill='%23FF9C3D'%20d='M1241.72%2072.629C1100.69%2091.6666%20969.11%20108.944%20863%20108.944C756.89%20108.944%20625.31%2091.6666%20484.28%2072.629C292.94%2046.8787%20113.66%2020.2481%20-1%200V163.966H863H1727V0C1612.34%2020.2481%201433.06%2046.8787%201241.72%2072.629Z'/%3e%3cpath%20fill='%23F3F3F3'%20d='M1252.25%2078.1624C1100.69%2096.7046%20965.87%20113.289%20863%20113.289C760.13%20113.289%20625.31%2096.7046%20473.75%2078.1624C216.26%2046.7213%2061.01%2050.7522%20-1%2085.6483L-1%201902H1727V85.6483C1664.99%2050.7522%201509.74%2046.7213%201252.25%2078.1624Z'/%3e%3c/svg%3e" alt="Hero Background Wave"
+            class="absolute bottom-0 left-0 w-full pointer-events-none z-0" />
+    </section>
+
+    <!-- Main product Swiper -->
+    <section class="relative py-12" style="height: clamp(0px, 30vw, 250px);">
+
+        <div class="max-w-7xl mx-auto px-4 relative">
+            <div
+                class="swiper dumpling-detail-main-swiper animate-bounce-skew border-[6px] border-[#FFAE19] rounded-3xl bg-[#7A0202] w-full max-w-[600px] aspect-square transform -translate-y-[430px]">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide flex items-center justify-center bg-gray-100 overflow-hidden rounded-lg">
+                        <img src="./assets/dumpling-detail-sub-swiper-4-DgpiptrX.png" alt="Dumpling Detail 1"
+                            class="object-cover w-full h-full" />
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide flex items-center justify-center bg-gray-100 overflow-hidden rounded-lg">
+                        <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Dumpling Detail 2"
+                            class="object-cover w-full h-full" />
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide flex items-center justify-center bg-gray-100 overflow-hidden rounded-lg">
+                        <img src="./assets/dumpling-detail-main-swiper-3-DEXYAcOO.png" alt="Dumpling Detail 3"
+                            class="object-cover w-full h-full" />
+                    </div>
+                </div>
+
+                <!-- Navigation + Pagination -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Name (Bánh Bao Xá Xíu) -->
+    <section class="max-w-4xl mx-auto px-4 py-6">
+        <div class="text-center">
+            <h1 class="text-2xl sm:text-3xl uppercase text-[#E7292B] font-bold mb-6 fade-up">Quá trình phát triển</h1>
+
+            <p class="mb-4 text-lg text-gray-700 font-semibold fade-up delay-2s">
+                Nhà máy sản xuất: <span class="text-black">Minh Hảo</span> | Tình trạng: <span class=" font-bold">Còn
+                    hàng</span>
+            </p>
+
+            <p class="mb-8 text-gray-600 leading-relaxed fade-up delay-4s">
+                Mỗi chiếc bánh căng tròn, nhân thịt nóng hổi quyện cùng nước sốt sóng sánh bên trong, mang đến trải
+                nghiệm "cắn đâu, ngập nhân đến đó". Bánh bao xá xíu ngập nhân không chỉ no bụng mà còn đậm vị ngon
+                khó quên, rất thích hợp cho bữa sáng, bữa trưa nhẹ hoặc những buổi xế chiều cần tiếp thêm năng
+                lượng.
+            </p>
+
+            <!-- Buttons with icons -->
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 fade-up delay-6s">
+
+                <!-- Hotline Button -->
+                <button type="button"
+                    class="inline-flex flex-row items-center gap-3 font-semibold pl-1 pr-6 py-1 rounded-full text-white cursor-pointer uppercase btn-hover-unique btn-gradient-animated transition-transform duration-300 transform hover:scale-105"
+                    style="background: linear-gradient(360deg, #064DA1 -56.52%, #0059C3 59.78%)">
+                    <span
+                        class="w-10 h-10 rounded-full bg-[#FF0006] flex items-center justify-center border-2 border-white">
+                        <img src="data:image/svg+xml,%3csvg%20width='27'%20height='27'%20viewBox='0%200%2027%2027'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.1446%2026.6411C18.8941%2026.6411%2017.9562%2026.3285%2017.0184%2026.0158C14.2048%2025.078%2011.7038%2023.5149%209.51541%2021.6391C6.38918%2019.1381%203.8882%2016.0119%202.01246%2012.573C1.07459%2011.0099%200.449342%209.13419%200.136719%207.57107C0.136719%206.94582%200.136719%206.32058%200.449342%206.00795C1.69983%204.44484%202.95033%202.5691%204.51344%201.31861C4.51344%201.00598%204.82607%201.00598%205.13869%200.693359C5.45131%200.693359%205.76394%200.693359%205.76394%201.00598C6.07656%201.00598%206.38918%201.31861%206.38918%201.31861C7.63968%202.88172%208.57755%204.75746%209.51541%206.6332C10.1407%207.57107%209.82804%207.88369%209.20279%208.50894C8.57755%209.13419%207.9523%209.44681%207.63968%2010.0721C7.32705%2010.0721%207.32705%2010.3847%207.32705%2010.6973C8.26492%2013.1983%209.51541%2015.074%2011.7038%2016.9498C13.2669%2018.2003%2014.83%2019.1381%2016.3931%2019.4508C16.7057%2019.4508%2016.7057%2019.4508%2016.7057%2019.4508C17.0184%2018.8255%2017.6436%2018.5129%2017.9562%2017.8876C18.8941%2016.9498%2019.2067%2016.9498%2020.1446%2017.2624C22.0203%2018.2003%2023.5835%2019.1381%2025.1466%2020.3886C25.4592%2020.3886%2025.4592%2020.7012%2025.7718%2021.0139C26.0844%2021.3265%2026.0844%2021.6391%2025.7718%2021.9517C25.7718%2022.2644%2025.1466%2022.577%2024.834%2023.2022C23.5835%2024.4527%2022.333%2025.3906%2021.0825%2026.3285C20.7698%2026.3285%2020.4572%2026.6411%2020.1446%2026.6411Z'%20fill='white'/%3e%3cpath%20d='M26.0839%2012.8857C25.4587%2012.8857%2024.8334%2012.8857%2024.2082%2012.8857C24.2082%2010.0721%2023.2703%207.57107%2021.0819%205.69533C19.2062%203.81959%2016.7052%202.88172%2013.8916%202.5691C13.8916%201.94385%2013.8916%201.31861%2013.8916%200.693359C20.4567%200.693359%2026.0839%206.00795%2026.0839%2012.8857Z'%20fill='white'/%3e%3cpath%20d='M21.3944%2012.8858C20.7692%2012.8858%2020.1439%2012.8858%2019.5187%2012.8858C19.5187%2011.3227%2018.8934%2010.0722%2017.9556%208.82168C17.0177%207.88381%2015.4546%207.25856%2014.2041%207.25856C14.2041%206.63332%2014.2041%206.00807%2014.2041%205.38282C17.3303%205.0702%2021.3944%208.19643%2021.3944%2012.8858Z'%20fill='white'/%3e%3c/svg%3e" alt="Detail Icon">
+                    </span>
+                    Gọi hotline
+                </button>
+
+                <!-- Đăng ký tư vấn -->
+                <button type="button"
+                    class="inline-flex flex-row items-center gap-3 font-semibold pl-1 pr-6 py-1 rounded-full text-white cursor-pointer transition hover:opacity-90 bg-[#FF0006] uppercase btn-hover-unique btn-gradient-animated transition-transform duration-300 transform hover:scale-105">
+                    <span
+                        class="w-10 h-10 rounded-full bg-[#FF0006] flex items-center justify-center border-2 border-white">
+                        <img src="./assets/dumpling-detail-avatar-icon-BtWVhJ5X.svg" alt="Avatar Icon">
+                    </span>
+                    Đăng ký tư vấn
+                </button>
+
+                <!-- Đặt hàng Shopee -->
+                <button type="button"
+                    class="inline-flex flex-row items-center gap-3 font-semibold pl-1 pr-6 py-1 rounded-full text-white cursor-pointer transition hover:opacity-90 bg-[#FC5722] uppercase btn-hover-unique btn-gradient-animated transition-transform duration-300 transform hover:scale-105">
+                    <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center">
+                        <img src="./assets/dumpling-detail-shopee-main-icon-D1OgEo58.svg"
+                            alt="Shopee Main Icon">
+                    </span>
+                    Đặt hàng Shopee
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Describe (Mô tả sản phẩm) -->
+    <section class="max-w-7xl mx-auto px-4 py-6">
+        <div class="bg-white rounded-xl p-6 my-6 shadow-md mx-auto animate-boxOpen">
+
+            <div class="mb-6">
+                <h1 class="text-2xl font-bold mb-4">Mô tả sản phẩm</h1>
+            </div>
+
+            <div class="mb-6">
+                <h2 class="text-xl font-semibold mb-2">Bánh Bao Xá XÍU</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Bánh bao xá xíu ngập nhân chinh phục thực khách ngay từ lần đầu thưởng thức với lớp vỏ bánh mềm
+                    xốp, trắng mịn ôm trọn phần nhân xá xíu đậm đà, đầy ắp. Nhân thịt heo xá xíu được ướp theo công
+                    thức riêng, thơm lừng mùi mật ong, nước tương, ngũ vị hương và gia vị truyền thống, tạo nên vị
+                    ngọt mặn hài hòa, thấm đẫm trong từng thớ thịt.
+                </p>
+            </div>
+
+            <div>
+                <h2 class="text-xl font-semibold mb-2">Nhà sản xuất: Minh Hảo</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Mềm tay khi cầm, mềm môi khi cắn — bánh bao xá xíu ngập nhân đưa bạn vào thế giới hương vị đậm
+                    đà, ngọt mặn cân bằng hoàn hảo. Lớp vỏ bánh mịn màng, ấm nóng như ôm lấy phần nhân xá xíu thấm
+                    sốt, ngọt nhẹ vị mật ong, thoảng hương ngũ vị, mềm mại trong từng sợi thịt. Chỉ cần một lần cắn,
+                    nước sốt xá xíu béo ngậy ùa ra, thấm đẫm đầu lưỡi, khiến bạn không thể ngừng "thèm" thêm miếng
+                    nữa.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products Swiper-->
+    <section class="max-w-7xl mx-auto py-6">
+        <div class="px-2 md:px-3 lg:px-4 overflow-visible">
+            <div class=" flex flex-col md:flex-row gap-8 items-center text-center md:text-left">
+                <!-- News Title -->
+                <div class="flex-1 text-left uppercase">
+                    <h1 class="text-[#E7292B] font-bold text-2xl sm:text-3xl md:text-4xl mt-1 fade-left ">
+                        Sản phẩm liên quan
+                    </h1>
+                </div>
+            </div>
+
+            <!-- Sub Swiper -->
+            <div class="dumpling-detail-sub-swiper swiper mt-16 w-full relative overflow-visible fade-up delay-4s">
+                <div class="swiper-wrapper pb-12">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide max-w-[90vw] mx-auto">
+                        <a href="#"
+                            class="bg-white rounded-lg shadow-lg overflow-hidden block p-4 border border-gray-200">
+                            <img src="./assets/dumpling-detail-sub-swiper-1-Be9OLPfJ.png" alt="Bánh bao hải sản"
+                                class="w-full h-52 object-cover rounded-lg" />
+                            <div class="mt-3 flex items-center justify-between gap-3">
+                                <h3 class="text-lg font-semibold text-black">
+                                    Bánh bao hải sản
+                                </h3>
+                                <div
+                                    class="w-11 h-11 rounded-full bg-[#FC5722] flex items-center justify-center flex-shrink-0">
+                                    <img src="./assets/dumpling-detail-shopee-sub-icon-ZTO8N0g-.svg"
+                                        alt="Shopee Icon" class="w-9 h-9" />
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Repeat slides... just copy the above block -->
+
+                </div>
+
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation Buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Footer Gray Wave -->
+    <footer class="relative py-4 sm:py-12 px-6 text-black" style="
+            background-image: url(&quot;data:image/svg+xml,%3csvg%20width='1728'%20height='670'%20viewBox='0%200%201728%20670'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%203.18452C18.7738%20-4.30954%2044.9488%202.28162%2073.1094%2014.0193C112.191%2030.2715%20156.599%2040.9257%20205.789%2030.2715C295.236%2010.8592%20388.924%2013.8387%20495.519%2062.7759C604.823%20112.977%20732.358%20129.771%20870.995%2091.6686C1020.64%2050.4964%201146.46%2038.9393%201256.4%2086.2512C1330.77%20118.214%201422.93%20114.512%201517.7%20103.858C1614.36%2093.023%201701.55%2083.4523%201728%2099.3433V670.486H0.451293L0%203.18452Z'%20fill='%23FFEECF'/%3e%3c/svg%3e&quot;), linear-gradient(#F3F3F3);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center, 0 0;
+            background-size: cover, cover;
+        ">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-32">
+            <!-- Left Section -->
+            <div class="w-full flex flex-col items-start gap-6">
+                <img src="./assets/footer-Nbj7l8H6.png" alt="Big image"
+                    class="w-full max-w-[200px] md:max-w-[260px] lg:max-w-[286px] h-auto object-contain rounded-md" />
+                <ul class="flex flex-wrap justify-start gap-1 sm:gap-2 md:gap-4 text-white text-lg">
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><img
+                                src="./assets/zalo-icon-DLaycxUz.svg" alt="Zalo Icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Middle Section: Công Ty & Dịch Vụ -->
+            <div class="w-full">
+                <div class="mb-8">
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-4 uppercase">Công Ty</h1>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="about-us"
+                                class="hover:underline">Về Minh Hảo</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="store"
+                                class="hover:underline">Cửa hàng trực thuộc</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-4 uppercase">Dịch Vụ</h1>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="dumpling"
+                                class="hover:underline">Sản Phẩm</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="cooperate"
+                                class="hover:underline">Hợp Tác</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="#"
+                                class="hover:underline">Hướng dẫn lấy bánh sỉ</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="contact"
+                                class="hover:underline">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2 text-black hover:text-[#E7292B] transition-colors mt-4">
+                    <i class="fa-solid fa-location-dot text-[#E7292B]"></i>
+                    <a href="#" class="text-[#E7292B] font-medium hover:underline">Xem bản đồ</a>
+                </div>
+            </div>
+
+            <!-- Right Section: Contact + Form -->
+            <div class="w-full md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-auto">
+                <div>
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-2 uppercase">Thông tin liên hệ</h1>
+                    <ul class="space-y-3">
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <div>
+                                <p>Head Office:</p>
+                                <p class="font-medium">156 Nguyễn Kim, Phường 6, Quận 10, TP HCM</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-phone-volume mt-1"></i>
+                            <div>
+                                <p>HOTLINE:</p>
+                                <p class="font-medium">(028) 3957 1457 – (028) 3853 390</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-envelope-open-text mt-1"></i>
+                            <div>
+                                <p>Email:</p>
+                                <p class="font-medium break-all">banhbaominhhao156@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Form -->
+                <div class="mt-8"> <!-- add margin-top here -->
+                    <h1 class="text-[#E7292B] text-lg font-semibold uppercase mb-2">Đăng Ký nhận Khuyến mãi</h1>
+                    <p class="text-[#1C1C1C] font-medium mb-4">
+                        Kết nối với Minh Hảo, nhận ngay tin khuyến mãi mới nhất và ý tưởng thực đơn "mix" hấp dẫn mỗi
+                        ngày!
+                    </p>
+                    <form class="relative w-full max-w-full">
+                        <div class="relative">
+                            <input type="text" placeholder="Họ và tên"
+                                class="w-full rounded-full bg-white border border-gray-300 px-4 py-4 pr-32 text-sm focus:outline-none focus:ring-2 focus:ring-[#E7292B]" />
+                            <button type="submit"
+                                class="absolute right-1 top-1 bottom-1 px-4 rounded-full bg-[#E7292B] text-white font-semibold text-sm hover:bg-red-700 transition flex items-center gap-2 cursor-pointer">
+                                Gửi ngay <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Copyright Bottom Line -->
+        <div
+            class="mt-4 pt-4 pb-6 text-sm text-black max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p class="text-center sm:text-left">
+                Copyright 2025 <strong>MINH HẢO</strong>. Powered by <a href="#"
+                    class="font-semibold text-[#E7292B] hover:underline">HD Agency</a>
+            </p>
+            <p class="text-center sm:text-right">
+                <a href="#" class="hover:underline">Điều khoản sử dụng</a> | <a href="#" class="hover:underline">Chính
+                    sách bảo mật</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

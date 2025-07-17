@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Load your styles (Tailwind, swiper.css, fontawesome, etc.) -->
+
+    <!-- Load your JS entry point -->
+        <title>Bánh bao</title>
+      <script type="module" crossorigin src="./assets/main-B2Ccc0Nk.js"></script>
+      <link rel="stylesheet" crossorigin href="./assets/main-DiNN7t2y.css">
+    </head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white relative">
+        <div class="max-w-screen mx-auto flex items-center justify-between h-20 lg:h-28 px-6 lg:px-12 relative">
+
+        <!-- Left links -->
+        <ul class="flex-1 hidden lg:flex space-x-8 uppercase">
+            <li><a href="/"
+                class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Trang
+                chủ</a>
+            </li>
+            <!-- Dropdown Button Wrapper -->
+            <li class="relative group">
+            <button id="dropdownButton1" type="button" aria-controls="dropdown1"
+                class="flex items-center uppercase text-black font-semibold group-hover:text-[#E7292B] transition duration-300 focus:outline-none">
+                <span
+                class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                Giới Thiệu
+                </span>
+                <i id="icon1"
+                class="fas fa-chevron-right ml-2 transform transition-transform duration-300 group-hover:rotate-90"></i>
+            </button>
+
+
+            <!-- Dropdown: hover + click show -->
+            <div id="dropdown1"
+                class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white shadow rounded transition-all duration-300">
+                <a href="about-us"
+                class="block px-4 py-3 text-black  hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+                Về Minh Hảo
+                </a>
+                <a href="store"
+                class="block px-4 py-3 hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+                Cửa hàng trực thuộc
+                </a>
+            </div>
+            </li>
+
+
+            <li><a href="cooperate"
+                class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Hợp
+                tác</a>
+            </li>
+        </ul>
+
+        <!-- CENTER LOGO -->
+        <a href="/" class="hidden lg:block flex-shrink-0 z-10 items-center">
+            <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-28 w-auto" />
+        </a>
+
+        <!-- RIGHT LINKS -->
+        <div class="flex-1 hidden lg:flex justify-end items-center space-x-3">
+            <!-- Right nav -->
+            <ul class="hidden xl:flex space-x-4">
+            <li class="relative group">
+                <button id="dropdownButton2" type="button" aria-expanded="false" aria-controls="dropdown2"
+                class="flex items-center uppercase text-black font-semibold hover:text-[#E7292B] underline-offset-2 decoration-[#E7292B] focus:outline-none">
+                <span
+                    class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                    Sản phẩm
+                </span>
+                <i id="icon2"
+                    class="fas fa-chevron-right ml-2 text-black font-semibold transform transition-transform duration-300 group-hover:rotate-90"></i>
+                </button>
+
+                <!-- Dropdown content -->
+                <div id="dropdown2"
+                class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white rounded shadow">
+                <a href="dumpling"
+                    class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                    Bánh Bao
+                </a>
+                <a href="#"
+                    class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                    Bánh Ngọt
+                </a>
+                <a href="#"
+                    class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                    Bánh Giò - Xôi
+                </a>
+                </div>
+            </li>
+
+
+            <li><a href="news"
+                class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Tin
+                Tức</a>
+            </li>
+
+            <li><a href="contact"
+                class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Liên
+                Hệ</a>
+            </li>
+            </ul>
+            <!-- Search + Phone -->
+            <button
+            class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition mx-6 cursor-pointer">
+            <i class="fa-solid fa-search"></i>
+            </button>
+            <div class="flex items-center space-x-2">
+            <i class="fa-solid fa-phone-volume text-3xl text-[#E7292B]"></i>
+            <div class="flex flex-col leading-tight">
+                <span class="text-black font-semibold text-sm">Tư vấn khách hàng</span>
+                <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+            </div>
+            </div>
+        </div>
+
+        <!-- Mobile Topbar -->
+        <div class="relative w-full h-28 px-4 lg:hidden flex items-center justify-between">
+
+            <!-- LEFT: Hamburger -->
+            <button id="menuToggle" class="z-10 w-8 h-8 flex flex-col justify-between items-center p-1">
+                <i class="fa-solid fa-bars text-[#E7292B]"></i>
+            </button>
+
+            <!-- CENTER: Logo -->
+            <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+            <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-20 lg:h-24 w-auto" />
+            </div>
+
+            <!-- RIGHT: Search + Phone -->
+            <div class="hidden sm:flex items-center space-x-3">
+            <!-- Search -->
+            <button
+                class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition cursor-pointer">
+                <i class="fa-solid fa-search"></i>
+            </button>
+
+            <!-- Phone (make text tighter on small screens) -->
+            <div class="flex items-center space-x-1">
+                <i class="fa-solid fa-phone-volume text-xl text-[#E7292B]"></i>
+                <div class="flex flex-col leading-none text-right text-xs">
+                <span class="text-black font-semibold">Tư vấn khách hàng</span>
+                <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Black overlay animation layer -->
+        <div id="overlaySlide"
+            class="fixed top-0 left-0 w-0 h-full bg-black opacity-70 z-30 transition-all duration-500 ease-in-out pointer-events-none touch-none">
+        </div>
+
+        <!-- Mobile Menu Sidebar -->
+        <div id="mobileMenu"
+            class="lg:hidden fixed top-0 left-0 h-full w-64 shadow-lg transform -translate-x-full transition-transform duration-300 z-40 flex flex-col overflow-y-auto"
+            style="background: radial-gradient(50% 50% at 50% 50%, #B40303 0%, #7A0202 100%);">
+
+            <!-- ✖ Close button -->
+            <div class="flex justify-end p-4">
+            <button id="mobileMenuClose" aria-label="Close Menu"
+                class="text-3xl text-[#D6A528] hover:text-[#E7292B] transition duration-300 focus:outline-none">
+                &times;
+            </button>
+            </div>
+
+            <!-- 🔍 Search -->
+            <form action="/search" method="GET" class="px-6 mb-4">
+            <div class="flex items-center bg-white rounded-lg overflow-hidden w-full">
+                <input name="q" type="text" placeholder="Tìm kiếm..." autocomplete="off"
+                class="flex-grow px-3 py-2 text-sm text-[#7A0202] focus:outline-none min-w-0">
+                <button type="submit" class="flex-shrink-0 px-4 py-2 bg-[#E7292B] text-white hover:bg-[#b40303]">
+                <i class="fa-solid fa-search"></i>
+                </button>
+            </div>
+            </form>
+
+            <!-- Navigation List -->
+            <ul class="flex flex-col space-y-5 px-6 pb-8 uppercase font-semibold text-white flex-1">
+
+            <li><a href="/" class="hover:text-[#E7292B] transition-colors">Trang chủ</a></li>
+
+            <!-- Giới Thiệu -->
+            <li>
+                <button id="mobileDropdownButton1" aria-expanded="false" aria-controls="mobileDropdown1"
+                class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+                Giới Thiệu
+                <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor"
+                    stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                </button>
+                <ul id="mobileDropdown1"
+                class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-2 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+                <li><a href="about-us" class="hover:text-[#E7292B] transition-colors">Về Minh Hảo</a></li>
+                <li><a href="store" class="hover:text-[#E7292B] transition-colors">Cửa hàng trực thuộc</a></li>
+                </ul>
+            </li>
+
+            <li><a href="cooperate" class="hover:text-[#E7292B] transition-colors">Hợp tác</a></li>
+
+            <!-- Sản phẩm -->
+            <li>
+                <button id="mobileDropdownButton2" aria-expanded="false" aria-controls="mobileDropdown2"
+                class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+                Sản phẩm
+                <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none" stroke="currentColor"
+                    stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+                </button>
+                <ul id="mobileDropdown2"
+                class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-3 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+                <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Bao</a></li>
+                <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Ngọt</a></li>
+                <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Giò - Xôi</a></li>
+                </ul>
+            </li>
+
+            <li><a href="news" class="hover:text-[#E7292B] transition-colors">Tin tức</a></li>
+            <li><a href="contact" class="hover:text-[#E7292B] transition-colors">Liên hệ</a></li>
+            </ul>
+
+            <!-- ☎ Phone block -->
+            <div class="px-6 py-4 border-t border-[#FFCD27]/30">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-phone-volume text-2xl text-[#FFCD27]"></i>
+                <div class="leading-tight">
+                <span class="block text-xs text-white">Tư vấn khách hàng</span>
+                <span class="block font-semibold text-[#FFCD27]">(028) 3957 1457</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Decorative water image -->
+        <div id="waterImage"
+        class="absolute w-48 lg:w-96 h-auto top-[calc(100%-0.1rem)] left-1/2 -translate-x-1/2 z-10 transition-transform duration-500 ease-[cubic-bezier(0.68,0.95,0.41,1.31)]">
+        <img src="data:image/svg+xml,%3csvg%20width='240'%20height='28'%20viewBox='0%200%20240%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%200C72%200%2071.5%2027.5%20119.5%2027.5C167.5%2027.5%20168%200%20240%200H0Z'%20fill='%23FFFEFD'/%3e%3c/svg%3e" alt="Decorative Water" class="w-full h-full object-contain block" />
+        </div>
+    </header>
+
+    <!-- Hero (Bánh bao) -->
+    <section class="lg:h-[600px] md:h-[500px] sm:h-[400px] h-[300px] text-white" style="background: var(--main-bg);">
+        <div class="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between">
+
+            <!-- Left: Title and Breadcrumb -->
+            <div
+                class="w-full md:w-1/2 flex flex-col items-center justify-center text-center md:items-start md:text-left h-full">
+                <div>
+                    <h1 class="text-4xl text-[#FFCD27] md:text-5xl font-bold mb-4">
+                        Bánh bao
+                    </h1>
+                    <nav class="text-white text-sm md:text-base mb-4" aria-label="Breadcrumb">
+                        <ol class="list-reset flex justify-center md:justify-start items-center space-x-2">
+                            <li>
+                                <a href="/" class="text-white hover:underline">Trang chủ</a>
+                            </li>
+                            <li>
+                                <span class="mx-2">/</span>
+                            </li>
+                            <li class="font-semibold">Bánh bao</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+                        <!-- Right: Image (Hidden on screens ≤768px) -->
+            <div class="w-full md:w-1/2 mt-8 md:mt-0 justify-center md:justify-end relative hidden md:flex">
+                <img src="./assets/hero-sub-DCK5kuzD.png" alt="Sub Hero" class="max-h-[500px] object-contain z-0" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Category (Loại bánh) -->
+    <section class="py-16 bg-[#FFF4EC]">
+    <div class="max-w-6xl mx-auto px-4">
+        <!-- Section Title -->
+        <div class="text-center mb-10">
+        <h2 class="text-2xl md:text-3xl font-bold text-[#B40303] uppercase">Loại bánh</h2>
+        <p class="text-[#7A0202] mt-2">Khám phá các dòng bánh ngon của Minh Hảo</p>
+        </div>
+
+        <!-- Main Category Tabs -->
+        <div id="mainTabs" class="flex flex-wrap gap-4 justify-center mb-8">
+        <button class="tab-btn category-btn active cursor-pointer" data-tab="banhbao">Bánh bao</button>
+        <button class="tab-btn category-btn cursor-pointer" data-tab="banhngot">Bánh ngọt</button>
+        <button class="tab-btn category-btn cursor-pointer" data-tab="banhgioxoi">Bánh giò - xôi</button>
+        </div>
+
+        <!-- Subcategories Container -->
+        <div class="bg-white rounded-2xl shadow-lg p-6 max-w-4xl mx-auto border border-[#FFE3D3]">
+        <div class="w-full">
+            <!-- Bánh bao -->
+            <div id="tab-banhbao" class="tab-content block">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="category-btn cursor-pointer">Bánh bao ngọt</button>
+                <button class="category-btn cursor-pointer">Bánh bao mặn</button>
+                <button class="category-btn cursor-pointer">Bánh bao chay</button>
+                <button class="category-btn cursor-pointer">Bánh bao không nhân</button>
+                <button class="category-btn cursor-pointer">Bánh bao tạo hình</button>
+            </div>
+            </div>
+
+            <!-- Bánh ngọt -->
+            <div id="tab-banhngot" class="tab-content hidden">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="category-btn cursor-pointer">Bánh mì ngọt</button>
+                <button class="category-btn cursor-pointer">Bánh su kem</button>
+                <button class="category-btn cursor-pointer">Bánh tart trứng</button>
+            </div>
+            </div>
+
+            <!-- Bánh giò - xôi -->
+            <div id="tab-banhgioxoi" class="tab-content hidden">
+            <div class="flex flex-wrap gap-4 justify-center">
+                <button class="category-btn cursor-pointer">Bánh giò</button>
+                <button class="category-btn cursor-pointer">Xôi đậu xanh</button>
+                <button class="category-btn cursor-pointer">Xôi gấc</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- list -->
+    <section class="py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <!-- Grid Container 2 x 2 -->
+            <div id="dumpling-grid-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+                <!-- Grid Items -->
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-1-qzRxsSU0.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao nhân thịt trứng cút
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-2-Bo5WkXri.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao xá xíu
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-3-BGwCQyRb.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao kim sa
+                    </div>
+                </a>
+
+                <a href="#" class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="./assets/dumpling-list-4-DxFlPMBj.png" alt="Bánh bao nhân thịt trứng cút" class="w-full h-60 object-cover rounded-lg">
+                    <div class="p-3 text-center font-semibold text-black">
+                        Bánh bao cà ri gà
+                    </div>
+                </a>
+
+
+                <!-- More items here... -->
+
+            </div>
+
+            <!-- Pagination Controls -->
+            <div class="flex justify-center items-center mt-8 space-x-2">
+                <button id="prev-btn"
+                    class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300 disabled:opacity-50">
+                    <i class="fa-solid fa-angle-left"></i>
+                </button>
+
+                <div id="page-buttons" class="flex space-x-1"></div>
+
+                <button id="next-btn"
+                    class="px-4 py-2 bg-gray-200 text-gray-600 rounded hover:bg-gray-300 disabled:opacity-50">
+                    <i class="fa-solid fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer white wave -->
+    <footer class="relative py-4 sm:py-12 px-6 text-black" style="
+            background-image: url(&quot;data:image/svg+xml,%3csvg%20width='1728'%20height='670'%20viewBox='0%200%201728%20670'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%203.18452C18.7738%20-4.30954%2044.9488%202.28162%2073.1094%2014.0193C112.191%2030.2715%20156.599%2040.9257%20205.789%2030.2715C295.236%2010.8592%20388.924%2013.8387%20495.519%2062.7759C604.823%20112.977%20732.358%20129.771%20870.995%2091.6686C1020.64%2050.4964%201146.46%2038.9393%201256.4%2086.2512C1330.77%20118.214%201422.93%20114.512%201517.7%20103.858C1614.36%2093.023%201701.55%2083.4523%201728%2099.3433V670.486H0.451293L0%203.18452Z'%20fill='%23FFEECF'/%3e%3c/svg%3e&quot;), linear-gradient(white);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center, 0 0;
+            background-size: cover, cover;
+        ">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-32">
+            <!-- Left Section -->
+            <div class="w-full flex flex-col items-start gap-6">
+                <img src="./assets/footer-Nbj7l8H6.png" alt="Big image"
+                    class="w-full max-w-[200px] md:max-w-[260px] lg:max-w-[286px] h-auto object-contain rounded-md" />
+                <ul class="flex flex-wrap justify-start gap-1 sm:gap-2 md:gap-4 text-white text-lg">
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><img src="./assets/zalo-icon-DLaycxUz.svg" alt="Zalo Icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Middle Section: Công Ty & Dịch Vụ -->
+            <div class="w-full">
+                <div class="mb-8">
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-4 uppercase">Công Ty</h1>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="about-us"
+                                class="hover:underline">Về Minh Hảo</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="store"
+                                class="hover:underline">Cửa hàng trực thuộc</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-4 uppercase">Dịch Vụ</h1>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="dumpling"
+                                class="hover:underline">Sản Phẩm</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="cooperate"
+                                class="hover:underline">Hợp Tác</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="#"
+                                class="hover:underline">Hướng dẫn lấy bánh sỉ</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="contact"
+                                class="hover:underline">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2 text-gray-600 hover:text-[#E7292B] transition-colors mt-4">
+                    <i class="fa-solid fa-location-dot text-[#E7292B]"></i>
+                    <a href="#" class="text-[#E7292B] font-medium hover:underline">Xem bản đồ</a>
+                </div>
+            </div>
+
+            <!-- Right Section: Contact + Form -->
+            <div class="w-full md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-auto">
+                <div>
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-2 uppercase">Thông tin liên hệ</h1>
+                    <ul class="space-y-3">
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <div>
+                                <p>Head Office:</p>
+                                <p class="font-medium">156 Nguyễn Kim, Phường 6, Quận 10, TP HCM</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-phone-volume mt-1"></i>
+                            <div>
+                                <p>HOTLINE:</p>
+                                <p class="font-medium">(028) 3957 1457 – (028) 3853 390</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-envelope-open-text mt-1"></i>
+                            <div>
+                                <p>Email:</p>
+                                <p class="font-medium break-all">banhbaominhhao156@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Form -->
+                <div class="mt-8"> <!-- add margin-top here -->
+                    <h1 class="text-[#E7292B] text-lg font-semibold uppercase mb-2">Đăng Ký nhận Khuyến mãi</h1>
+                    <p class="text-black [font-medium mb-4">
+                        Kết nối với Minh Hảo, nhận ngay tin khuyến mãi mới nhất và ý tưởng thực đơn "mix" hấp dẫn mỗi
+                        ngày!
+                    </p>
+                    <form class="relative w-full max-w-full">
+                        <div class="relative">
+                            <input type="text" placeholder="Họ và tên"
+                                class="w-full rounded-full bg-white border border-gray-300 px-4 py-4 pr-32 text-sm focus:outline-none focus:ring-2 focus:ring-[#E7292B]" />
+                            <button type="submit"
+                                class="absolute right-1 top-1 bottom-1 px-4 rounded-full bg-[#E7292B] text-white font-semibold text-sm hover:bg-red-700 transition flex items-center gap-2 cursor-pointer">
+                                Gửi ngay <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+         <!-- Copyright Bottom Line -->
+        <div class="mt-4 pt-4 pb-6 text-sm text-black max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <p class="text-center sm:text-left">
+            Copyright 2025 <strong>MINH HẢO</strong>. Powered by <a href="#" class="font-semibold text-[#E7292B] hover:underline">HD Agency</a>
+        </p>
+        <p class="text-center sm:text-right">
+            <a href="#" class="hover:underline">Điều khoản sử dụng</a> | <a href="#" class="hover:underline">Chính sách bảo mật</a>
+        </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Load your styles (Tailwind, swiper.css, fontawesome, etc.) -->
+
+    <!-- Load your JS entry point -->
+    <title>Về Chúng tôi</title>
+  <script type="module" crossorigin src="./assets/main-B2Ccc0Nk.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/main-DiNN7t2y.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-white relative">
+        <div class="max-w-screen mx-auto flex items-center justify-between h-20 lg:h-28 px-6 lg:px-12 relative">
+
+            <!-- Left links -->
+            <ul class="flex-1 hidden lg:flex space-x-8 uppercase">
+                <li><a href="/"
+                        class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Trang
+                        chủ</a>
+                </li>
+                <!-- Dropdown Button Wrapper -->
+                <li class="relative group">
+                    <button id="dropdownButton1" type="button" aria-controls="dropdown1"
+                        class="flex items-center uppercase text-black font-semibold group-hover:text-[#E7292B] transition duration-300 focus:outline-none">
+                        <span
+                            class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                            Giới Thiệu
+                        </span>
+                        <i id="icon1"
+                            class="fas fa-chevron-right ml-2 transform transition-transform duration-300 group-hover:rotate-90"></i>
+                    </button>
+
+
+                    <!-- Dropdown: hover + click show -->
+                    <div id="dropdown1"
+                        class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white shadow rounded transition-all duration-300">
+                        <a href="about-us"
+                            class="block px-4 py-3 text-black  hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+                            Về Minh Hảo
+                        </a>
+                        <a href="store"
+                            class="block px-4 py-3 hover:bg-[#E7292B] hover:text-white rounded transition-all duration-300 font-semibold">
+                            Cửa hàng trực thuộc
+                        </a>
+                    </div>
+                </li>
+
+
+                <li><a href="cooperate"
+                        class="text-black font-semibold hover:text-[#E7292B] hover:underline decoration-2 decoration-[#E7292B]">Hợp
+                        tác</a>
+                </li>
+            </ul>
+
+            <!-- CENTER LOGO -->
+            <a href="/" class="hidden lg:block flex-shrink-0 z-10 items-center">
+                <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-28 w-auto" />
+            </a>
+
+            <!-- RIGHT LINKS -->
+            <div class="flex-1 hidden lg:flex justify-end items-center space-x-3">
+                <!-- Right nav -->
+                <ul class="hidden xl:flex space-x-4">
+                    <li class="relative group">
+                        <button id="dropdownButton2" type="button" aria-expanded="false" aria-controls="dropdown2"
+                            class="flex items-center uppercase text-black font-semibold hover:text-[#E7292B] underline-offset-2 decoration-[#E7292B] focus:outline-none">
+                            <span
+                                class="hover:text-[#E7292B] hover:underline decoration-2 underline-offset-2 transition-colors duration-300 cursor-pointer">
+                                Sản phẩm
+                            </span>
+                            <i id="icon2"
+                                class="fas fa-chevron-right ml-2 text-black font-semibold transform transition-transform duration-300 group-hover:rotate-90"></i>
+                        </button>
+
+                        <!-- Dropdown content -->
+                        <div id="dropdown2"
+                            class="dropdown hidden group-hover:block absolute mt-2 w-64 space-y-2 z-20 bg-white rounded shadow">
+                            <a href="dumpling"
+                                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                                Bánh Bao
+                            </a>
+                            <a href="#"
+                                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                                Bánh Ngọt
+                            </a>
+                            <a href="#"
+                                class="block font-semibold bg-white hover:bg-[#E7292B] hover:text-white px-4 py-3 rounded transition-all duration-300 uppercase">
+                                Bánh Giò - Xôi
+                            </a>
+                        </div>
+                    </li>
+
+
+                    <li><a href="news"
+                            class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Tin
+                            Tức</a>
+                    </li>
+
+                    <li><a href="contact"
+                            class="text-black font-semibold hover:text-[#E7292B] uppercase hover:underline decoration-2 decoration-[#E7292B]">Liên
+                            Hệ</a>
+                    </li>
+                </ul>
+                <!-- Search + Phone -->
+                <button
+                    class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition mx-6 cursor-pointer">
+                    <i class="fa-solid fa-search"></i>
+                </button>
+                <div class="flex items-center space-x-2">
+                    <i class="fa-solid fa-phone-volume text-3xl text-[#E7292B]"></i>
+                    <div class="flex flex-col leading-tight">
+                        <span class="text-black font-semibold text-sm">Tư vấn khách hàng</span>
+                        <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Topbar -->
+            <div class="relative w-full h-28 px-4 lg:hidden flex items-center justify-between">
+
+                <!-- LEFT: Hamburger -->
+                <button id="menuToggle" class="z-10 w-8 h-8 flex flex-col justify-between items-center p-1">
+                    <i class="fa-solid fa-bars text-[#E7292B]"></i>
+                </button>
+
+                <!-- CENTER: Logo -->
+                <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-0">
+                    <img src="./assets/nav-logo-Cf2wKFWa.png" alt="Logo" class="h-20 lg:h-24 w-auto" />
+                </div>
+
+                <!-- RIGHT: Search + Phone -->
+                <div class="hidden sm:flex items-center space-x-3">
+                    <!-- Search -->
+                    <button
+                        class="bg-[#E7292B] w-9 h-9 flex items-center justify-center rounded-full text-white hover:bg-red-700 transition cursor-pointer">
+                        <i class="fa-solid fa-search"></i>
+                    </button>
+
+                    <!-- Phone (make text tighter on small screens) -->
+                    <div class="flex items-center space-x-1">
+                        <i class="fa-solid fa-phone-volume text-xl text-[#E7292B]"></i>
+                        <div class="flex flex-col leading-none text-right text-xs">
+                            <span class="text-black font-semibold">Tư vấn khách hàng</span>
+                            <span class="text-[#E7292B] font-semibold">(028) 3957 1457</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Black overlay animation layer -->
+            <div id="overlaySlide"
+                class="fixed top-0 left-0 w-0 h-full bg-black opacity-70 z-30 transition-all duration-500 ease-in-out pointer-events-none touch-none">
+            </div>
+
+            <!-- Mobile Menu Sidebar -->
+            <div id="mobileMenu"
+                class="lg:hidden fixed top-0 left-0 h-full w-64 shadow-lg transform -translate-x-full transition-transform duration-300 z-40 flex flex-col overflow-y-auto"
+                style="background: radial-gradient(50% 50% at 50% 50%, #B40303 0%, #7A0202 100%);">
+
+                <!-- ✖ Close button -->
+                <div class="flex justify-end p-4">
+                    <button id="mobileMenuClose" aria-label="Close Menu"
+                        class="text-3xl text-[#D6A528] hover:text-[#E7292B] transition duration-300 focus:outline-none">
+                        &times;
+                    </button>
+                </div>
+
+                <!-- 🔍 Search -->
+                <form action="/search" method="GET" class="px-6 mb-4">
+                    <div class="flex items-center bg-white rounded-lg overflow-hidden w-full">
+                        <input name="q" type="text" placeholder="Tìm kiếm..." autocomplete="off"
+                            class="flex-grow px-3 py-2 text-sm text-[#7A0202] focus:outline-none min-w-0">
+                        <button type="submit"
+                            class="flex-shrink-0 px-4 py-2 bg-[#E7292B] text-white hover:bg-[#b40303]">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Navigation List -->
+                <ul class="flex flex-col space-y-5 px-6 pb-8 uppercase font-semibold text-white flex-1">
+
+                    <li><a href="/" class="hover:text-[#E7292B] transition-colors">Trang chủ</a></li>
+
+                    <!-- Giới Thiệu -->
+                    <li>
+                        <button id="mobileDropdownButton1" aria-expanded="false" aria-controls="mobileDropdown1"
+                            class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+                            Giới Thiệu
+                            <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <ul id="mobileDropdown1"
+                            class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-2 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+                            <li><a href="about-us" class="hover:text-[#E7292B] transition-colors">Về Minh Hảo</a></li>
+                            <li><a href="store" class="hover:text-[#E7292B] transition-colors">Cửa hàng trực thuộc</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="cooperate" class="hover:text-[#E7292B] transition-colors">Hợp tác</a></li>
+
+                    <!-- Sản phẩm -->
+                    <li>
+                        <button id="mobileDropdownButton2" aria-expanded="false" aria-controls="mobileDropdown2"
+                            class="w-full flex justify-between items-center hover:text-[#E7292B] transition-colors focus:outline-none uppercase">
+                            Sản phẩm
+                            <svg class="w-4 h-4 ml-2 transition-transform duration-300" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                        <ul id="mobileDropdown2"
+                            class="ml-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out flex-col space-y-3 text-white text-sm pl-2 border-l-2 border-[#FFCD27]">
+                            <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Bao</a></li>
+                            <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Ngọt</a></li>
+                            <li><a href="dumpling" class="hover:text-[#E7292B] transition-colors">Bánh Giò - Xôi</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li><a href="news" class="hover:text-[#E7292B] transition-colors">Tin tức</a></li>
+                    <li><a href="contact" class="hover:text-[#E7292B] transition-colors">Liên hệ</a></li>
+                </ul>
+
+                <!-- ☎ Phone block -->
+                <div class="px-6 py-4 border-t border-[#FFCD27]/30">
+                    <div class="flex items-center space-x-3">
+                        <i class="fa-solid fa-phone-volume text-2xl text-[#FFCD27]"></i>
+                        <div class="leading-tight">
+                            <span class="block text-xs text-white">Tư vấn khách hàng</span>
+                            <span class="block font-semibold text-[#FFCD27]">(028) 3957 1457</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Decorative water image -->
+        <div id="waterImage"
+            class="absolute w-48 lg:w-96 h-auto top-[calc(100%-0.1rem)] left-1/2 -translate-x-1/2 z-10 transition-transform duration-500 ease-[cubic-bezier(0.68,0.95,0.41,1.31)]">
+            <img src="data:image/svg+xml,%3csvg%20width='240'%20height='28'%20viewBox='0%200%20240%2028'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%200C72%200%2071.5%2027.5%20119.5%2027.5C167.5%2027.5%20168%200%20240%200H0Z'%20fill='%23FFFEFD'/%3e%3c/svg%3e" alt="Decorative Water"
+                class="w-full h-full object-contain block" />
+        </div>
+    </header>
+
+    <!-- Hero (Về Minh Hảo) -->
+    <section class="lg:h-[600px] md:h-[500px] sm:h-[400px] h-[300px] text-white" style="background: var(--main-bg);">
+        <div class="max-w-7xl mx-auto px-4 h-full flex flex-col md:flex-row items-center justify-between">
+
+            <!-- Left: Title and Breadcrumb -->
+            <div
+                class="w-full md:w-1/2 flex flex-col items-center justify-center text-center md:items-start md:text-left h-full">
+                <div>
+                    <h1 class="text-4xl text-[#FFCD27] md:text-5xl font-bold mb-4">
+                        Về Minh Hảo
+                    </h1>
+                    <nav class="text-white text-sm md:text-base mb-4" aria-label="Breadcrumb">
+                        <ol class="list-reset flex justify-center md:justify-start items-center space-x-2">
+                            <li>
+                                <a href="/" class="text-white hover:underline">Trang chủ</a>
+                            </li>
+                            <li>
+                                <span class="mx-2">/</span>
+                            </li>
+                            <li class="font-semibold">Về Minh Hảo</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- Right: Image (Hidden on screens ≤768px) -->
+            <div class="w-full md:w-1/2 mt-8 md:mt-0 justify-center md:justify-end relative hidden md:flex">
+                <img src="./assets/hero-sub-DCK5kuzD.png" alt="Sub Hero" class="max-h-[500px] object-contain z-0" />
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Intro (Giới Thiệu Về Thương Hiệu Bánh Bao Minh Hảo) -->
+    <section class="py-20 bg-white relative  hidden md:block">
+        <div class="max-w-7xl mx-auto px-4">
+
+            <div class="flex flex-col items-center relative">
+                <div id="timeline-line" class="absolute left-1/2 -translate-x-1/2 w-1 bg-gray-300 z-1"></div>
+                <div id="timeline-active-dot" class="absolute w-6 h-6 bg-red-600 rounded-full shadow-md transition-all duration-500 z-11"></div>
+
+                <!-- Blocks container -->
+                <div class="flex flex-col space-y-32 w-full max-w-7xl">
+
+                    <!-- Block 1 -->
+                    <div class="flex items-center justify-between w-full">
+                        <!-- Left: Image with box background -->
+                        <div class="w-1/2 pr-12 flex justify-end">
+                            <div class=" w-full">
+                                <img src="./assets/about-intro-1-CO4M5w5i.png" alt="About Intro 1">
+                            </div>
+                        </div>
+
+                        <!-- Center: Dot -->
+                        <div class="timeline-dot relative z-10 w-6 h-6 bg-gray-200 rounded-full shadow-md"></div>
+
+                        <!-- Right: Content -->
+                        <div class="w-1/2 pl-12">
+                            <h1 class="text-4xl text-[#E7292B] font-bold mb-2 uppercase">Giới Thiệu Về Thương Hiệu Bánh
+                                Bao Minh Hảo</h1>
+                            <p class="text-black">Khi nhắc đến bánh bao tại Việt Nam, đặc biệt là ở khu vực miền Nam,
+                                Minh Hảo là một cái tên quen thuộc, gắn liền với bữa sáng vội vã hay món ăn vặt lót dạ
+                                buổi chiều của nhiều người. Minh Hảo không chỉ đơn thuần là một cơ sở sản xuất bánh, mà
+                                đã phát triển thành một thương hiệu bánh bao uy tín, được nhiều người tiêu dùng tin
+                                tưởng lựa chọn.</p>
+                        </div>
+                    </div>
+
+                    <!-- Block 2 -->
+                    <div class="flex items-center justify-between w-full">
+                        <!-- Left: Content -->
+                        <div class="w-1/2 pr-12 text-left">
+                            <h1 class="text-4xl text-[#E7292B] font-bold mb-2 uppercase">Tầm Nhìn và Sứ Mệnh Của Minh
+                                Hảo</h1>
+                            <p class="text-black text">Đối với Minh Hảo, Tầm nhìn và Sứ mệnh Của chúng tôi có thể gói
+                                gọn
+                                trong việc mang đến những chiếc bánh bao chất lượng cao, thơm ngon, và an toàn cho sức
+                                khỏe người tiêu dùng. Minh Hảo đặt mục tiêu trở thành thương hiệu bánh bao hàng đầu,
+                                được yêu thích trên khắp cả nước, không chỉ bởi hương vị truyền thống mà còn bởi sự đổi
+                                mới trong sản phẩm và dịch vụ.</p>
+                            <br>
+                            <p class="text-black">Sứ mệnh của Minh Hảo là duy trì và phát huy tinh hoa của món ẩm
+                                thực truyền thống này, đồng thời xây dựng niềm tin vững chắc nơi khách hàng thông qua sự
+                                uy tín về nguồn gốc nguyên liệu và quy trình sản xuất.</p>
+                        </div>
+
+                        <!-- Center: Dot -->
+                        <div class="timeline-dot relative z-10 w-6 h-6 bg-gray-200 rounded-full shadow-md"></div>
+
+                        <!-- Right: Image -->
+                        <div class="w-1/2 pl-12 flex justify-start z-1">
+                            <div class=" w-full">
+                                <img src="./assets/about-intro-2-x03D7GfY.png" alt="About Intro 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Block 3 -->
+                    <div class="flex flex-row items-center justify-between w-full">
+                        <!-- Left: Image -->
+                        <div class="w-1/2 pr-12 flex justify-end">
+                            <div class="relative w-full max-w-md">
+                                <!-- Main image -->
+                                <img src="./assets/about-intro-3-D8evodEE.png" alt="About Intro 3" class="w-full">
+
+                                <!-- Decorative absolute images -->
+                                <img src="./assets/about-intro-4-CwZJ-S6d.png" alt="About Intro 4"
+                                    class="absolute bottom-40 -left-30 w-16 md:w-[70%]">
+
+                                <img src="data:image/png;base64,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" alt="About Intro seed 1"
+                                    class="absolute bottom-120 -right-10 w-10 md:w-16">
+
+                                <img src="data:image/png;base64,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" alt="About Intro seed 2"
+                                    class="absolute bottom-20 -right-25 transform -translate-x-1/2 -translate-y-1/2 w-8 md:w-12">
+                            </div>
+                        </div>
+
+                        <!-- Center: Dot -->
+                        <div class="timeline-dot relative z-10 w-6 h-6 bg-gray-200 rounded-full shadow-md mb-8 md:mb-0">
+                        </div>
+
+                        <!-- Right: Content -->
+
+                        <div class="w-1/2 pl-12"> <!-- Make this relative -->
+                            <!-- Content on top -->
+                            <h1 class="text-3xl md:text-4xl text-[#E7292B] font-bold mb-2 uppercase relative z-10">
+                                Quy Mô Hoạt Động và Độ Phủ Thị Trường Rộng Khắp
+                            </h1>
+                            <p class="text-black relative z-10">Để đáp ứng nhu cầu thưởng thức bánh bao của đông đảo
+                                người dân, Minh Hảo đã đầu tư xây dựng một quy mô hoạt động sản xuất lớn mạnh. Điều này
+                                giúp thương hiệu có khả năng cung ứng số lượng lớn bánh bao Minh Hảo ra thị trường mỗi
+                                ngày, đảm bảo sản phẩm luôn tươi mới.</p>
+                            <br>
+                            <p class="text-black relative z-10">Đặc biệt, điểm mạnh nổi bật của Minh Hảo chính là độ
+                                phủ thị trường rộng khắp, không chỉ qua các cửa hàng bánh bao và địa điểm ăn uống ở Sài
+                                Gòn. Minh Hảo là đối tác tin cậy, chuyên cung cấp sỉ bánh bao cho rất nhiều khách hàng
+                                kinh doanh ở các tỉnh thành. Mạng lưới này đặc biệt tập trung và phát triển mạnh mẽ tại
+                                các tỉnh miền Nam và miền Trung.</p>
+                            <br>
+                            <p class="text-black relative z-10">Hệ thống phân phối đa dạng từ cửa hàng, đại lý lẻ cho
+                                đến việc cung cấp sỉ cho các nhà hàng, quán ăn, căng tin... đã giúp thương hiệu bánh bao
+                                Minh Hảo tiếp cận được với đông đảo người tiêu dùng trên cả nước</p>
+                        </div>
+                    </div>
+                    <!-- Add more blocks here, alternating the side of image/content -->
+                </div>
+            </div>
+            <!-- Background Decorations -->
+            <img src="./assets/about-intro-bg-rice-DutXtjIa.png" alt="Rice Background"
+                class="absolute top-[15%] right-[-5%]  h-auto z-0 pointer-events-none" />
+
+            <img src="./assets/about-intro-bg-flour-BYxvb-0E.png" alt="Flour Background"
+                class="absolute bottom-20 right-0 w-[40%] h-auto z-0 pointer-events-none" />
+
+        </div>
+
+    </section>
+
+    <!-- Intro Mobile -->
+    <section class="py-20 bg-white block md:hidden">
+        <div class="max-w-7xl mx-auto px-4 space-y-24 ">
+
+            <!-- Block 1: Image firt -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12">
+
+                <!-- Image -->
+                <div class="md:w-1/2 w-full">
+                    <img src="./assets/about-intro-1-CO4M5w5i.png" alt="About Intro 1" class="w-full h-auto">
+                </div>
+
+                <!-- Content -->
+                <div class="md:w-1/2 w-full">
+                    <h2 class="text-2xl md:text-3xl text-[#E7292B] font-bold uppercase mb-4">
+                        Giới Thiệu Về Thương Hiệu Bánh Bao Minh Hảo
+                    </h2>
+                    <p class="text-black">
+                        Khi nhắc đến bánh bao tại Việt Nam, đặc biệt là ở khu vực miền Nam, Minh Hảo là một cái tên quen
+                        thuộc, gắn liền với bữa sáng vội vã hay món ăn vặt lót dạ buổi chiều của nhiều người. Minh Hảo
+                        không chỉ đơn thuần là một cơ sở sản xuất bánh, mà đã phát triển thành một thương hiệu bánh bao
+                        uy tín, được nhiều người tiêu dùng tin tưởng lựa chọn.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Block 2 -->
+            <div class="flex flex-col md:flex-row-reverse items-center gap-12">
+                <!-- Image -->
+                <div class="md:w-1/2 w-full">
+                    <img src="./assets/about-intro-2-x03D7GfY.png" alt="About Intro 2" class="w-full h-auto">
+                </div>
+
+                <!-- Content -->
+                <div class="md:w-1/2 w-full">
+                    <h2 class="text-2xl md:text-3xl text-[#E7292B] font-bold uppercase mb-4">
+                        Tầm Nhìn và Sứ Mệnh Của Minh Hảo
+                    </h2>
+                    <p class="text-black mb-4">
+                        Đối với Minh Hảo, Tầm nhìn và Sứ mệnh Của chúng tôi có thể gói gọn trong việc mang đến những
+                        chiếc bánh bao chất lượng cao, thơm ngon, và an toàn cho sức khỏe người tiêu dùng. Minh Hảo đặt
+                        mục tiêu trở thành thương hiệu bánh bao hàng đầu, được yêu thích trên khắp cả nước, không chỉ
+                        bởi hương vị truyền thống mà còn bởi sự đổi mới trong sản phẩm và dịch vụ.
+                    </p>
+                    <p class="text-black">
+                        Sứ mệnh của Minh Hảo là duy trì và phát huy tinh hoa của món ẩm thực truyền thống này, đồng thời
+                        xây dựng niềm tin vững chắc nơi khách hàng thông qua sự uy tín về nguồn gốc nguyên liệu và quy
+                        trình sản xuất.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Block 3 -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6">
+
+                <!-- Image -->
+                <div class="md:w-1/2 md:w-full w-[60%]">
+                    <img src="./assets/about-intro-3-D8evodEE.png" alt="About Intro 1" class="w-full h-auto">
+                </div>
+
+                <!-- Content -->
+                <div class="md:w-1/2 w-full">
+                    <h2 class="text-2xl md:text-3xl text-[#E7292B] font-bold uppercase mb-4">
+                        Quy Mô Hoạt Động và Độ Phủ Thị Trường Rộng Khắp
+                    </h2>
+                    <p class="text-black mb-4">
+                        Để đáp ứng nhu cầu thưởng thức bánh bao của đông đảo người dân, Minh Hảo đã đầu tư xây dựng một
+                        quy mô hoạt động sản xuất lớn mạnh. Điều này giúp thương hiệu có khả năng cung ứng số lượng lớn
+                        bánh bao Minh Hảo ra thị trường mỗi ngày, đảm bảo sản phẩm luôn tươi mới.
+                    </p>
+                    <p class="text-black mb-4">
+                        Đặc biệt, điểm mạnh nổi bật của Minh Hảo chính là độ phủ thị trường rộng khắp, không chỉ qua các
+                        cửa hàng bánh bao và địa điểm ăn uống ở Sài Gòn. Minh Hảo là đối tác tin cậy, chuyên cung cấp sỉ
+                        bánh bao cho rất nhiều khách hàng kinh doanh ở các tỉnh thành. Mạng lưới này đặc biệt tập trung
+                        và phát triển mạnh mẽ tại các tỉnh miền Nam và miền Trung.
+                    </p>
+                    <p class="text-black">
+                        Hệ thống phân phối đa dạng từ cửa hàng, đại lý lẻ cho đến việc cung cấp sỉ cho các nhà hàng,
+                        quán ăn, căng tin... đã giúp thương hiệu bánh bao Minh Hảo tiếp cận được với đông đảo người tiêu
+                        dùng trên cả nước </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer White Wave -->
+    <footer class="relative py-4 sm:py-12 px-6 text-black" style="
+            background-image: url(&quot;data:image/svg+xml,%3csvg%20width='1728'%20height='670'%20viewBox='0%200%201728%20670'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0%203.18452C18.7738%20-4.30954%2044.9488%202.28162%2073.1094%2014.0193C112.191%2030.2715%20156.599%2040.9257%20205.789%2030.2715C295.236%2010.8592%20388.924%2013.8387%20495.519%2062.7759C604.823%20112.977%20732.358%20129.771%20870.995%2091.6686C1020.64%2050.4964%201146.46%2038.9393%201256.4%2086.2512C1330.77%20118.214%201422.93%20114.512%201517.7%20103.858C1614.36%2093.023%201701.55%2083.4523%201728%2099.3433V670.486H0.451293L0%203.18452Z'%20fill='%23FFEECF'/%3e%3c/svg%3e&quot;), linear-gradient(white);
+            background-repeat: no-repeat, no-repeat;
+            background-position: center, 0 0;
+            background-size: cover, cover;
+        ">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mt-32">
+            <!-- Left Section -->
+            <div class="w-full flex flex-col items-start gap-6">
+                <img src="./assets/footer-Nbj7l8H6.png" alt="Big image"
+                    class="w-full max-w-[200px] md:max-w-[260px] lg:max-w-[286px] h-auto object-contain rounded-md" />
+                <ul class="flex flex-wrap justify-start gap-1 sm:gap-2 md:gap-4 text-white text-lg">
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"
+                            class="bg-[#CB1908] w-12 h-12 p-3 rounded-md flex items-center justify-center hover:opacity-75"><img
+                                src="./assets/zalo-icon-DLaycxUz.svg" alt="Zalo Icon"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Middle Section: Công Ty & Dịch Vụ -->
+            <div class="w-full">
+                <div class="mb-8">
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-4 uppercase">Công Ty</h1>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="about-us"
+                                class="hover:underline">Về Minh Hảo</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="store"
+                                class="hover:underline">Cửa hàng trực thuộc</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-4 uppercase">Dịch Vụ</h1>
+                    <ul class="space-y-2 font-medium">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="dumpling"
+                                class="hover:underline">Sản Phẩm</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="cooperate"
+                                class="hover:underline">Hợp Tác</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="#"
+                                class="hover:underline">Hướng dẫn lấy bánh sỉ</a></li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-angle-right"></i><a href="contact"
+                                class="hover:underline">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="flex items-center gap-2 text-black hover:text-[#E7292B] transition-colors mt-4">
+                    <i class="fa-solid fa-location-dot text-[#E7292B]"></i>
+                    <a href="#" class="text-[#E7292B] font-medium hover:underline">Xem bản đồ</a>
+                </div>
+            </div>
+
+            <!-- Right Section: Contact + Form -->
+            <div class="w-full md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-auto">
+                <div>
+                    <h1 class="text-[#E7292B] text-lg font-semibold mb-2 uppercase">Thông tin liên hệ</h1>
+                    <ul class="space-y-3">
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-location-dot mt-1"></i>
+                            <div>
+                                <p>Head Office:</p>
+                                <p class="font-medium">156 Nguyễn Kim, Phường 6, Quận 10, TP HCM</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-phone-volume mt-1"></i>
+                            <div>
+                                <p>HOTLINE:</p>
+                                <p class="font-medium">(028) 3957 1457 – (028) 3853 390</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-2 items-start">
+                            <i class="fa-solid fa-envelope-open-text mt-1"></i>
+                            <div>
+                                <p>Email:</p>
+                                <p class="font-medium break-all">banhbaominhhao156@gmail.com</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Subscribe Form -->
+                <div class="mt-8"> <!-- add margin-top here -->
+                    <h1 class="text-[#E7292B] text-lg font-semibold uppercase mb-2">Đăng Ký nhận Khuyến mãi</h1>
+                    <p class="text-[#1C1C1C] font-medium mb-4">
+                        Kết nối với Minh Hảo, nhận ngay tin khuyến mãi mới nhất và ý tưởng thực đơn "mix" hấp dẫn mỗi
+                        ngày!
+                    </p>
+                    <form class="relative w-full max-w-full">
+                        <div class="relative">
+                            <input type="text" placeholder="Họ và tên"
+                                class="w-full rounded-full bg-white border border-gray-300 px-4 py-4 pr-32 text-sm focus:outline-none focus:ring-2 focus:ring-[#E7292B]" />
+                            <button type="submit"
+                                class="absolute right-1 top-1 bottom-1 px-4 rounded-full bg-[#E7292B] text-white font-semibold text-sm hover:bg-red-700 transition flex items-center gap-2 cursor-pointer">
+                                Gửi ngay <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Copyright Bottom Line -->
+        <div
+            class="mt-4 pt-4 pb-6 text-sm text-black max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <p class="text-center sm:text-left">
+                Copyright 2025 <strong>MINH HẢO</strong>. Powered by <a href="#"
+                    class="font-semibold text-[#E7292B] hover:underline">HD Agency</a>
+            </p>
+            <p class="text-center sm:text-right">
+                <a href="#" class="hover:underline">Điều khoản sử dụng</a> | <a href="#" class="hover:underline">Chính
+                    sách bảo mật</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

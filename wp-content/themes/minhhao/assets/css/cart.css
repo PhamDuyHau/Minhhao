@@ -1,0 +1,225 @@
+/* === Base === */
+body {
+  background-color: #FFEECF;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* === Highlight Section === */
+.section-highlight {
+  background: radial-gradient(50% 50% at 50% 30%, #B40303 0%, #7A0202 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* === Layout Fix === */
+.wc-block-components-sidebar-layout {
+  padding-top: 2rem !important;
+  margin-top: 3rem !important;
+  
+}
+
+/* === Main Cart Container === */
+.wc-block-cart {
+  max-width: 1280px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+}
+
+/* === Cart Table === */
+.wc-block-cart-items {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.wc-block-cart-items__header th {
+  background-color: #f9fafb;
+  color: #111827;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.wc-block-cart-items__row {
+  border-bottom: 1px solid #f3f4f6;
+  background: #fff;
+  transition: background 0.3s ease;
+}
+
+.wc-block-cart-items__row:hover {
+  background-color: #fefefe;
+}
+
+/* === Product Links === */
+.wc-block-cart-item__product a {
+  color: #1f2937;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* === Quantity Input === */
+.wc-block-cart-item__quantity input {
+  width: 60px;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 0.875rem;
+}
+
+/* === Remove Button === */
+.wc-block-cart-item__remove-link {
+  background-color: #ef4444;
+  color: #fff;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.wc-block-cart-item__remove-link:hover {
+  background-color: #b91c1c;
+}
+
+/* === Totals Panel === */
+.wc-block-cart__totals-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b91c1c;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.wc-block-components-totals-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.wc-block-components-totals-item__label {
+  color: #4b5563;
+}
+
+.wc-block-components-totals-item__value {
+  color: #7A0202;
+  font-weight: 700;
+}
+
+/* === Checkout Button === */
+.wc-block-cart__submit-button {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(to right, #dc2626, #f87171);
+  color: white;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 9999px;
+  border: none;
+  transition: transform 0.2s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.wc-block-cart__submit-button:hover {
+  background: #b91c1c;
+  transform: scale(1.03);
+}
+
+/* === Coupon Button === */
+.wc-block-components-panel__button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background-color: #f9f9f9;
+  color: #7A0202;
+  border-radius: 0.5rem;
+  border: 1px solid #eee;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-bottom: 1rem;
+}
+
+.wc-block-components-panel__button:hover {
+  background-color: #f2f2f2;
+}
+
+.wc-block-components-panel__button-icon {
+  width: 20px;
+  height: 20px;
+  fill: #7A0202 !important;
+}
+
+/* === Focus State === */
+.wc-block-cart__submit-button:focus,
+.wc-block-cart__submit-button:focus-visible {
+  outline: 2px solid #B40303;
+  outline-offset: 2px;
+  box-shadow: none !important;
+}
+
+.wp-block-woocommerce-empty-cart-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* horizontally center child elements */
+  text-align: center;
+  padding: 4rem 1rem;
+  gap: 2rem;
+}
+
+.return-menu-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #7A0202;
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 9999px;
+  transition: background 0.3s ease;
+}
+
+.return-menu-button:hover {
+  background-color: #B40303;
+}
+
+
+/* === Mobile === */
+@media (max-width: 768px) {
+  .wc-block-cart {
+    padding: 1.5rem;
+  }
+
+  .wc-block-cart-items__header th,
+  .wc-block-cart-items__row td {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .wc-block-cart__submit-button {
+    padding: 0.9rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .wc-block-components-sidebar-layout {
+    margin-top: 2rem !important;
+  }
+}
+
