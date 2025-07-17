@@ -163,6 +163,8 @@ add_action('woocommerce_after_shop_loop_item', function () {
 }, 15);
 
 add_filter('woocommerce_post_class', function ($classes, $product) {
-    $classes[] = 'bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition';
+    if (is_shop() || is_product_category() || is_product_tag()) {
+        $classes[] = 'bg-white rounded-lg shadow-md overflow-hidden border border-gray-200 hover:shadow-lg transition';
+    }
     return $classes;
 }, 10, 2);

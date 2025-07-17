@@ -25,7 +25,7 @@ global $product;
  *
  * @hooked woocommerce_output_all_notices - 10
  */
-do_action('woocommerce_before_single_product');
+do_action(hook_name: 'woocommerce_before_single_product');
 
 // custom Hero 
 $hero_img_left_id = get_field('hero_img_left', 'option');
@@ -79,7 +79,6 @@ if (is_product()) :
 
 	if ($related->have_posts()) :
 ?>
-
 		<!-- Hero -->
 		<section class="relative flex items-center justify-between h-[100vh] overflow-hidden"
 			style="background: var(--main-bg);">
@@ -126,7 +125,7 @@ if (is_product()) :
 			<section class="relative py-12" style="height: clamp(0px, 30vw, 250px);">
 				<div class="max-w-7xl mx-auto px-4 relative">
 					<div
-						class="swiper dumpling-detail-main-swiper animate-bounce-skew border-[6px] border-[#FFAE19] rounded-3xl bg-[#7A0202] w-full max-w-[600px] aspect-square transform -translate-y-[430px]">
+						class="swiper dumpling-detail-main-swiper animate-bounce-skew border-[6px] border-[#FFAE19] rounded-3xl bg-[#7A0202] w-full max-w-[600px] aspect-square transform -translate-y-[430px] z-10">
 						<div class="swiper-wrapper">
 							<?php
 							// Main image
@@ -134,7 +133,7 @@ if (is_product()) :
 							if ($featured_id):
 								$featured_url = wp_get_attachment_image_url($featured_id, 'full');
 							?>
-								<div class="swiper-slide flex items-center justify-center bg-gray-100 overflow-hidden rounded-lg">
+								<div class="swiper-slide flex items-center justify-center bg-gray-100 overflow-visible rounded-lg">
 									<img src="<?= esc_url($featured_url); ?>" alt="<?= esc_attr(get_the_title()); ?>"
 										class="object-cover w-full h-full" />
 								</div>
