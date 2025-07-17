@@ -42,29 +42,8 @@ do_action('woocommerce_shop_loop_header');
 
 <section class="py-16 bg-[#FFF4EC]">
     <div class="max-w-6xl mx-auto px-4">
-
-        <?php
-        // Get main (top-level) product categories
-        $main_categories = get_terms([
-            'taxonomy'   => 'product_cat',
-            'parent'     => 0,
-            'hide_empty' => true, // Change to true to hide empty categories
-        ]);
-
-        if (!empty($main_categories)) :
-        ?>
-            <div class="flex flex-wrap gap-4 justify-center mb-8">
-                <?php foreach ($main_categories as $cat): ?>
-                    <a href="<?= esc_url(get_term_link($cat)); ?>"
-                        class="category-btn opacity-80 hover:opacity-100 transition font-semibold">
-                        <?= esc_html($cat->name); ?>
-                    </a>
-                <?php endforeach; ?>
-            </div>
-        <?php endif; ?>
-
+        <?php get_template_part('template-part/block/shop-category-buttons'); ?>
         <?php if (woocommerce_product_loop()) : ?>
-
             <?php
             /**
              * Hook: woocommerce_before_shop_loop.
@@ -74,79 +53,39 @@ do_action('woocommerce_shop_loop_header');
              * @hooked woocommerce_catalog_ordering - 30
              */
             do_action('woocommerce_before_shop_loop');
-
-            echo '<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">';
-
-            while (have_posts()) :
-                the_post();
-                do_action('woocommerce_shop_loop');
-                $product = wc_get_product(get_the_ID());
             ?>
-                <div class="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition duration-300 flex flex-col h-full">
+            <?php
+            woocommerce_product_loop_start();
 
-                    <!-- Product Image -->
-                    <a href="<?php the_permalink(); ?>" class="block relative">
-                        <?php the_post_thumbnail('medium', [
-                            'class' => 'w-full h-64 object-cover transition-transform duration-500 ease-in-out hover:scale-105'
-                        ]); ?>
-                        <?php if ($product && $product->is_on_sale()) : ?>
-                            <span class="absolute top-2 left-2 bg-red-600 text-white text-xs font-bold px-2 py-1 rounded shadow">Giảm giá</span>
-                        <?php endif; ?>
-                    </a>
-
-                    <!-- Content -->
-                    <div class="p-4 flex-1 flex flex-col justify-between text-left">
-
-                        <!-- Title -->
-                        <h3 class="font-semibold text-base text-gray-800 leading-snug mb-1">
-                            <a href="<?php the_permalink(); ?>" class="hover:text-[#B40303] transition">
-                                <?php the_title(); ?>
-                            </a>
-                        </h3>
-
-                        <!-- Description -->
-                        <?php if ($desc = get_the_excerpt()) : ?>
-                            <p class="text-sm text-gray-600 mb-4"><?= wp_trim_words($desc, 15, '…'); ?></p>
-                        <?php endif; ?>
-
-                        <!-- Price + Cart Icon -->
-                        <div class="flex items-center justify-between mt-auto pt-4 border-t">
-                            <div class="text-lg font-bold text-[#B40303]">
-                                <?= $product ? $product->get_price_html() : ''; ?>
-                            </div>
-                            <a href="<?php the_permalink(); ?>"
-                                class="w-10 h-10 flex items-center justify-center rounded-full border border-red-200 bg-[#FFF4EC] text-[#B40303] hover:bg-red-100 hover:scale-105 hover:shadow transition duration-300"
-                                title="Xem chi tiết sản phẩm">
-                                <i class="fa-solid fa-cart-plus text-base"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-        <?php endwhile;
-
-            echo '</div>'; // Close product grid
-            echo '<div class="mt-8 flex justify-center">';
-            /**
-             * Hook: woocommerce_after_shop_loop.
-             *
-             * @hooked woocommerce_pagination - 10
-             */
-            do_action('woocommerce_after_shop_loop');
-            echo '</div>';
-
-
-        else :
-
+            if (wc_get_loop_prop('total')) {
+                while (have_posts()) {
+                    the_post();
+                    do_action('woocommerce_shop_loop');
+                    wc_get_template_part('content', 'product');
+                }
+            }
+            woocommerce_product_loop_end();
+            ?>
+            <div class="mt-8 flex justify-center">
+                <?php
+                /**
+                 * Hook: woocommerce_after_shop_loop.
+                 *
+                 * @hooked woocommerce_pagination - 10
+                 */
+                do_action('woocommerce_after_shop_loop');
+                ?>
+            </div>
+        <?php else : ?>
+            <?php
             /**
              * Hook: woocommerce_no_products_found.
              *
              * @hooked wc_no_products_found - 10
              */
             do_action('woocommerce_no_products_found');
-
-        endif;
-        ?>
+            ?>
+        <?php endif; ?>
 
     </div>
 </section>
